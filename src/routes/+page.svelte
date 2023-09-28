@@ -1,7 +1,18 @@
 <!-- YOU CAN DELETE EVERYTHING IN THIS PAGE -->
 
 <div class="container h-full mx-auto flex justify-center items-center">
-	<div class="space-y-10 text-center flex flex-col items-center">
+	<div class="w-1/3">
+		<div>
+			<button type="button" class="block mb-2 btn bg-primary-500">Primary</button>
+			<button type="button" class="block mb-2 btn bg-secondary-500">Secondary</button>
+			<button type="button" class="block mb-2 btn bg-tertiary-500">Tertiary</button>
+			<button type="button" class="block mb-2 btn bg-success-500">Success</button>
+			<button type="button" class="block mb-2 btn bg-warning-500">Warning</button>
+			<button type="button" class="block mb-2 btn bg-error-500">Error</button>
+			<button type="button" class="block mb-2 btn bg-surface-500">surface</button>
+		</div>
+	</div>
+	<div class="w-2/2 space-y-10 text-center flex flex-col items-center">
 		<h2 class="h2">Welcome to SSFO Website.</h2>
 		<!-- Animated Logo -->
 		<figure>
