@@ -1,6 +1,7 @@
 <script>
 	import '../app.postcss';
-	import { AppShell } from '@skeletonlabs/skeleton';
+	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
+	import Footer from '$lib/footer.svelte';
 
 	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom';
 	import { storePopup, initializeStores } from '@skeletonlabs/skeleton';
@@ -18,4 +19,7 @@
 	</svelte:fragment>
 	<!-- Page Route Content -->
 	<slot />
-</AppShell>
+		<svelte:fragment slot="pageFooter">
+			<Footer />
+		</svelte:fragment>
+	</AppShell>
