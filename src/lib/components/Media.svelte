@@ -17,21 +17,21 @@
       <h1 class="text-center text-5xl text-gray-900 font-bold dark:text-gray-600 pb-[10%]">Samoa Stack Overflow Media</h1>
 			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
 				<div class="p-2 rounded-lg -translate-y-16">
-					<img src={ssoLunch1} alt="Ainsof So'o" class="w-full h-auto img-card" />
-					<img src={ssoLunch2} alt="" class="w-full h-auto img-card" />
-					<img src={encode} alt="" class="w-full h-auto img-card" />
+					<img src={ssoLunch1} alt="SSO Lunch at Amanakis" class="w-full h-auto img-card" />
+					<img src={ssoLunch2} alt="SSO Lunch at Coffee Roaster" class="w-full h-auto img-card" />
+					<img src={encode} alt="Ainsof and Encode team at SITA Expo" class="w-full h-auto img-card" />
 				</div>
 
 				<div class="p-2 rounded-lg">
-					<img src={sprintMeeting} alt="" class="w-full h-auto img-card" />
-					<img src={ssoLunch3} alt="" class="w-full h-auto img-card" />
-					<img src={eugeneWorkshop} alt="" class="w-full h-auto img-card" />
+					<img src={sprintMeeting} alt="Sprint Meeting at Vodafone Samoa" class="w-full h-auto img-card" />
+					<img src={ssoLunch3} alt="SSO Lunch at Phat Burger" class="w-full h-auto img-card" />
+					<img src={eugeneWorkshop} alt="Workshop led by Eugene Barkman" class="w-full h-auto img-card" />
 				</div>
 
 				<div class="p-2 rounded-lg -translate-y-16">
-					<img src={sitaExpo} alt="" class="w-full h-auto img-card" />
-					<img src={workshop} alt="" class="w-full h-auto img-card" />
-					<img src={lunchSita} alt="" class="w-full h-auto img-card" />
+					<img src={sitaExpo} alt="Sita Expo Team" class="w-full h-auto img-card" />
+					<img src={workshop} alt="SITA Workshop" class="w-full h-auto img-card" />
+					<img src={lunchSita} alt="SITA and SSO Lunch at Rose Cafe" class="w-full h-auto img-card" />
 				</div>
 			</div>
 		</div>
