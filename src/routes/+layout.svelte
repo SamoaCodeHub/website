@@ -3,8 +3,10 @@
 	import { AppShell } from '@skeletonlabs/skeleton';
 
 	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom';
-	import { storePopup } from '@skeletonlabs/skeleton';
-	import Sidebar from '$lib/components/Sidebar.svelte';
+	import { storePopup, initializeStores } from '@skeletonlabs/skeleton';
+	import Appbar from '$lib/components/Appbar.svelte';
+
+	initializeStores();
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 </script>
 
@@ -12,7 +14,7 @@
 <AppShell>
 	<svelte:fragment slot="header">
 		<!-- App Bar -->
-		<Sidebar />
+		<Appbar />
 	</svelte:fragment>
 	<!-- Page Route Content -->
 	<slot />
