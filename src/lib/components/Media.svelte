@@ -14,7 +14,7 @@
 <section class="py-24 text-white">
 	<div class="max-w-screen-xl mx-auto px-10">
 		<div class="container mx-auto py-16">
-      <h1 class="text-center text-5xl text-gray-900 font-bold dark:text-gray-600 pb-[10%]">Samoa Stack Overflow Media</h1>
+      <h1 class="text-center text-5xl text-gray-900 font-bold border-yellow-50 dark:text-gray-600 pb-[10%]">Samoa Stack Overflow Media</h1>
 			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
 				<div class="p-2 rounded-lg -translate-y-16">
 					<img src={ssoLunch1} alt="SSO Lunch at Amanakis" class="w-full h-auto img-card" />
@@ -39,7 +39,13 @@
 </section>
 `
 
-<style>
+<style lang="postcss">
+  section {
+		background-image: url('/images/tech-bg.png');
+		background-size: cover;
+		background-position: top;
+    background-repeat: no-repeat;
+	}
 	.img-card {
 		border-radius: 10px;
 		margin: 1.3rem 0;
