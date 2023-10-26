@@ -5,14 +5,9 @@
 	const sidebarItems = getSidebarItems();
 
 	export let toggleSidebar = true;
-	export let toggleExpand = false;
 </script>
 
-<!-- full sidebar -->
-<!-- svelte-ignore a11y-no-static-element-interactions -->
 <div
-	on:mouseenter={() => (toggleExpand = true)}
-	on:mouseleave={() => (toggleExpand = false)}
 	class:-translate-x-full={toggleSidebar}
 	class="w-full md:hidden focus:shadow-outline hover:w-56
   bg-surface-700 space-y-6 mt-0 pt-5 px-2 absolute overflow-hidden
