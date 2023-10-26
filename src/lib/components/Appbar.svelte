@@ -1,4 +1,5 @@
 <script>
+	import { getSidebarItems } from '$lib/utils';
 	import { AppBar, LightSwitch } from '@skeletonlabs/skeleton';
 	import {
 		IconBrandDiscordFilled,
@@ -6,13 +7,19 @@
 		IconHome,
 		IconMenu2
 	} from '@tabler/icons-svelte';
+
+	const sideBarItems = getSidebarItems();
+	export let toggleSidebar = false;
 </script>
 
 <AppBar shadow="shadow-2xl" slotTrail="!space-x-2">
 	<svelte:fragment slot="lead">
 		<div class="flex items-center space-x-4">
 			<!-- Hamburger Menu -->
-			<button class="btn-icon btn-icon-sm lg:!hidden">
+			<button
+				class="btn-icon btn-icon-sm lg:!hidden"
+				on:click={() => (toggleSidebar = !toggleSidebar)}
+			>
 				<IconMenu2 />
 			</button>
 			<!-- Logo -->
@@ -22,23 +29,13 @@
 		</div>
 	</svelte:fragment>
 	<svelte:fragment slot="trail">
-		<div class="relative hidden lg:block">
-			<button class="btn hover:variant-soft-primary">
-				<span>Menu Item 1</span>
-			</button>
-		</div>
-
-		<div class="relative hidden lg:block">
-			<button class="btn hover:variant-soft-primary">
-				<span>Menu Item 2</span>
-			</button>
-		</div>
-
-		<div class="relative hidden lg:block">
-			<button class="btn hover:variant-soft-primary">
-				<span>Menu Item 3</span>
-			</button>
-		</div>
+		{#each sideBarItems as item}
+			<div class="relative hidden lg:block">
+				<button class="btn hover:variant-soft-primary">
+					<span>{item.name}</span>
+				</button>
+			</div>
+		{/each}
 
 		<div class="relative hidden lg:block">
 			<LightSwitch />
