@@ -33,7 +33,7 @@
 
 		<LightSwitch />
 
-		<section class="hidden sm:inline-flex space-x-1 px-5">
+		<section class="hidden px-5 space-x-1 sm:inline-flex">
 			<a
 				class="btn-icon hover:variant-soft-primary"
 				href="https://github.com/Samoa-Stack-Overflow"
@@ -41,7 +41,7 @@
 				rel="noreferrer"
 			>
 				<IconBrandGithubFilled />
-				<i class="fa-brands fa-github text-lg" />
+				<i class="text-lg fa-brands fa-github" />
 			</a>
 		</section>
 	</svelte:fragment>
