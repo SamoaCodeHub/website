@@ -1,7 +1,7 @@
 <script>
 	import '../app.postcss';
-	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
-	import Footer from '$lib/components/footer.svelte';
+	import { AppShell } from '@skeletonlabs/skeleton';
+	import Footer from '$lib/components/Footer.svelte';
 
 	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom';
 	import { storePopup, initializeStores } from '@skeletonlabs/skeleton';
