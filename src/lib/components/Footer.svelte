@@ -17,7 +17,7 @@
                 #TODO: Replace link below with Discord invite link, and update title to match.
             -->
         <a
-            title="Get the latest internal news (Coming Soon!)"
+            title="Chat with the crew (Invite link coming soon!)"
             class="btn btn-sm variant-ghost-surface"
             href="https://github.com/Samoa-Stack-Overflow"
             target="_blank"
@@ -26,7 +26,7 @@
         </a>
         &nbsp;&nbsp;
         <a
-            title="Get the latest public news"
+            title="Get the latest on facebook"
             class="btn btn-sm variant-ghost-surface"
             href="https://www.facebook.com/groups/948415479224570"
             target="_blank"
