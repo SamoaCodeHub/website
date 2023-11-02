@@ -1,14 +1,8 @@
 <script>
-	import { getSidebarItems } from '$lib/utils';
 	import { AppBar, LightSwitch } from '@skeletonlabs/skeleton';
-	import {
-		IconBrandDiscordFilled,
-		IconBrandGithubFilled,
-		IconHome,
-		IconMenu2
-	} from '@tabler/icons-svelte';
+	import { IconBrandGithubFilled, IconHome, IconMenu2 } from '@tabler/icons-svelte';
+	import { menuItems } from '$lib/utils/';
 
-	const sideBarItems = getSidebarItems();
 	export let toggleSidebar = false;
 </script>
 
@@ -17,7 +11,7 @@
 		<div class="flex items-center space-x-4">
 			<!-- Hamburger Menu -->
 			<button
-				class="btn-icon btn-icon-sm lg:!hidden"
+				class="btn-icon btn-icon-sm md:!hidden"
 				on:click={() => (toggleSidebar = !toggleSidebar)}
 			>
 				<IconMenu2 />
@@ -29,7 +23,7 @@
 		</div>
 	</svelte:fragment>
 	<svelte:fragment slot="trail">
-		{#each sideBarItems as item}
+		{#each menuItems as item}
 			<div class="relative hidden lg:block">
 				<button class="btn hover:variant-soft-primary">
 					<span>{item.name}</span>
@@ -37,9 +31,7 @@
 			</div>
 		{/each}
 
-		<div class="relative hidden lg:block">
-			<LightSwitch />
-		</div>
+		<LightSwitch />
 
 		<section class="hidden sm:inline-flex space-x-1 px-5">
 			<a
@@ -50,14 +42,6 @@
 			>
 				<IconBrandGithubFilled />
 				<i class="fa-brands fa-github text-lg" />
-			</a>
-			<a
-				class="btn-icon hover:variant-soft-primary"
-				href="https://discord.gg/Cq7JVQtT"
-				target="_blank"
-				rel="noreferrer"
-			>
-				<IconBrandDiscordFilled />
 			</a>
 		</section>
 	</svelte:fragment>
