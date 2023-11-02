@@ -1,8 +1,6 @@
 <script>
-	import { getSidebarItems } from '$lib/utils';
+	import { menuItems } from '$lib/utils';
 	import { goto } from '$app/navigation';
-
-	const sidebarItems = getSidebarItems();
 
 	export let toggleSidebar = true;
 </script>
@@ -15,17 +13,17 @@
 >
 	<!-- nav -->
 	<div class="btn-group-vertical w-full">
-		{#each sidebarItems as { label, icon, ref }}
+		{#each menuItems as item}
 			<button
-				on:click={() => goto(ref)}
+				on:click={() => goto(item.ref)}
 				type="button"
 				class="btn flex w-full rounded transition duration-200"
 			>
 				<div class="w-full flex justify-start">
 					<div class="flex items-center h-6">
-						<svelte:component this={icon} name={icon} size={20} />
+						<svelte:component this={item.icon} name={item.icon} size={20} />
 					</div>
-					<span class="pl-2 whitespace-nowrap overflow-hidden">{label}</span>
+					<span class="pl-2 whitespace-nowrap overflow-hidden">{item.name}</span>
 				</div>
 			</button>
 		{/each}
