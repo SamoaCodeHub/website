@@ -12,12 +12,16 @@
             GitHub
         </a>
         &nbsp;&nbsp;
+            <!--
+                #TODO: Replace link below with Discord invite link, and update title to match.
+            -->
         <a
+            title="Get latest SSO internal news (Coming Soon!)"
             class="btn btn-sm variant-ghost-surface"
-            href="https://samoa-stack-overflow.atlassian.net/browse/WEB"
+            href="https://github.com/Samoa-Stack-Overflow"
             target="_blank"
         >
-            Jira
+            Discord
         </a>
         &nbsp;&nbsp;
         <a
