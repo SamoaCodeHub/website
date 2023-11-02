@@ -9,8 +9,8 @@
 
 <div
 	class:-translate-x-full={toggleSidebar}
-	class="w-full md:hidden focus:shadow-outline hover:w-56
-  bg-surface-700 space-y-6 mt-0 pt-5 px-2 absolute overflow-hidden
+	class="w-full md:hidden focus:shadow-outline hover:w-56 z-20
+  bg-surface-700 space-y-6 mt-16 pt-5 px-2 absolute overflow-hidden
 	inset-y-0 left-0 transform transition delay-200 duration-700 ease-in-out"
 >
 	<!-- nav -->
