@@ -22,10 +22,10 @@
         &nbsp;&nbsp;
         <a
             class="btn btn-sm variant-ghost-surface"
-            href="https://samoa-stack-overflow.atlassian.net/wiki/spaces/SW/overview"
+            href="https://www.facebook.com/groups/948415479224570"
             target="_blank"
         >
-            Confluence
+            facebook
         </a>
     </svelte:fragment>
     <svelte:fragment slot="trail">
