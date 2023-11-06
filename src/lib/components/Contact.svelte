@@ -24,7 +24,6 @@
 	<div
 		class="w-auto gap-4 mx-auto border-transparent rounded-md sm:p-1 lg:w-3/5 opacity-95 bg-slate-100 md:flex md:grid-cols-2"
 	>
-		unded-md sm:p-1 lg:w-3/5 opacity-95 bg-slate-100 md:flex md:grid-cols-2">
 		<div class="p-6 text-white rounded-t-md sm:rounded-md bg-surface-600 lg:w-1/3">
 			<header class="font-medium card-header h3">Contact Information</header>
 			<section class="grid gap-5 mt-8 lg:mt-10 lg:gap-10">
@@ -37,7 +36,7 @@
 					<span>admin@sso.com</span>
 				</div>
 				<div class="flex gap-5">
-					<IconMapPinFilled />illed/>
+					<IconMapPinFilled />
 					<span>Apia, Samoa</span>
 				</div>
 			</section>
