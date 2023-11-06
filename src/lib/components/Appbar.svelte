@@ -31,7 +31,9 @@
 			</div>
 		{/each}
 
-		<LightSwitch />
+		<div class="relative hidden lg:block">
+			<LightSwitch />
+		</div>
 
 		<section class="hidden px-5 space-x-1 sm:inline-flex">
 			<a
