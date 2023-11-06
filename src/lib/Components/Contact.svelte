@@ -1,8 +1,8 @@
 <script>
 	import {
-		IconDeviceMobileMessage,
-		IconMail,
-		IconLocation,
+		IconMailFilled,
+		IconPhoneFilled,
+		IconMapPinFilled,
 	} from '@tabler/icons-svelte';
 
 	let firstname = '';
@@ -20,66 +20,64 @@
 	};
 </script>
 
-<section class="h-full bg-gradient-to-br lg:px-10">
-	<div class="grid p-5 md:gap-8 sm:grid-cols-2">
-		<div class="p-10 mx-auto card variant-filled">
-			<h1 class="font-bold h1">Contact Information</h1>
-			<div class="grid gap-5 mt-8 lg:mt-16 lg:gap-10">
+<section class="py-10 bg-surface-300">
+	<div class="grid justify-center gap-4 p-10 text-black">
+		<h1 class="font-bold text-center h1">Contact Us</h1>
+		<h3>Any questions or remarks? Just write us a message!</h3>
+	</div>
+	<div class="w-3/5 gap-4 p-1 mx-auto rounded-lg opacity-95 bg-slate-100 md:flex md:grid-cols-2">
+		<div class="p-6 card lg:w-1/3">
+			<header class="font-medium card-header h3">Contact Information</header>
+			<section class="grid gap-5 mt-8 lg:mt-10 lg:gap-10">
 				<div class="flex gap-5">
-					<IconDeviceMobileMessage />
+					<IconPhoneFilled class="" />
 					<span>+685 1234567</span>
 				</div>
 				<div class="flex gap-5">
-					<IconMail />
+					<IconMailFilled class=""/>
 					<span>admin@sso.com</span>
 				</div>
 				<div class="flex gap-5">
-					<IconLocation />
+					<IconMapPinFilled class=""/>
 					<span>Apia, Samoa</span>
 				</div>
-			</div>
+			</section>
 		</div>
 		
-		<form class="grid mt-16 lg:mx-10 lg:p-8" on:submit|preventDefault={handleSubmit}>
-			<div class="grid w-full gap-4 md:gap-6 lg:grid-cols-2">
-				<label class="label">
+		<form class="grid p-2 mx-auto lg:p-8" on:submit|preventDefault={handleSubmit}>
+			<div class="grid w-full text-black lg:gap-4 lg:grid-cols-2 md:gap-6">
+				<label class="text-sm label">
 					<span>First Name</span>
-					<input class="input variant-form-material" type="text" placeholder="Enter first name" bind:value={firstname} required />
+					<input class="text-sm input variant-form-material" type="text" placeholder="Enter first name" bind:value={firstname} required />
 				</label>
 
-				<label class="label">
+				<label class="text-sm label">
 					<span>Last Name</span>
-					<input class="input variant-form-material" type="text" placeholder="Enter last name" bind:value={lastname} required />
+					<input class="text-sm input variant-form-material" type="text" placeholder="Enter last name" bind:value={lastname} required />
 				</label>
 
-				<label class="label">
+				<label class="text-sm label">
 					<span>Email</span>
-					<input class="input variant-form-material" type="text" placeholder="Enter email address" bind:value={email} required />
+					<input class="text-sm input variant-form-material" type="text" placeholder="Enter email address" bind:value={email} required />
 				</label>
 
-				<label class="label">
-					<span>Phone Number 
+				<label class="text-sm label">
+					<div class="flex gap-2">
+						<span>Phone
+						</span>
 						<span class="text-gray-400">(Optional)</span>
-					</span>
-					<input class="input variant-form-material" type="text" placeholder="Enter phone number" bind:value={phone} />
+					</div>
+					<input class="text-sm input variant-form-material" type="text" placeholder="Enter phone number" bind:value={phone} />
 				</label>
 			</div>
-			<label class="mt-8 label">
+			<label class="mt-8 text-sm text-black label">
 				<span>Message</span>
-				<textarea class="textarea variant-form-material" rows="4" placeholder="Write your message." bind:value={message} required/>
+				<textarea class="text-sm textarea variant-form-material" rows="4" placeholder="Write your message." bind:value={message} required/>
 			</label>
 			
-			<button type="submit" class="mt-4 lg:mt-8 justify-self-end btn variant-filled-secondary">
+			<button type="submit" class="mt-2 mb-6 rounded-lg md:justify-self-end btn variant-filled-secondary">
 				Send Message
 			</button>
 		</form>
 	</div>
 </section>
-
-<style lang="postcss">
-	section {
-		background-image: url('/images/hero-bg.svg');
-		background-size: cover;
-		background-position: center;
-	}
-</style>
