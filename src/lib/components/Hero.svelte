@@ -19,7 +19,7 @@
 						Samoa Stack Overflow - Where Innovation meets Collaboration
 					</p>
 				</div>
-				<div class="flex flex-col gap-4 lg:flex-row `mt-12 space-x-0 md:space-x-3 items-center">
+				<div class="flex flex-col gap-4 lg:flex-row mt-12 space-x-0 md:space-x-3 items-center">
 					<button class="py-4 w-full sm:w-1/3 lg:w-1/3 bg-blue-500 rounded-xl uppercase font-bold"
 						>Learn More</button
 					>
