@@ -13,13 +13,10 @@
             GitHub
         </a>
         &nbsp;&nbsp;
-            <!--
-                #TODO: Replace link below with Discord invite link, and update title to match.
-            -->
         <a
-            title="Chat with the crew (invite link coming soon!)"
+            title="Join us on Discord"
             class="btn btn-sm variant-ghost-surface"
-            href="https://github.com/Samoa-Stack-Overflow"
+            href="https://forms.gle/aoTeV9jF5h7wnqAG6"
             target="_blank"
         >
             Discord
