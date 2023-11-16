@@ -2,13 +2,13 @@
 	import { menuItems } from '$lib/utils';
 	import { goto } from '$app/navigation';
 
-	export let toggleSidebar = true;
+	export let toggleSidebar = false;
 </script>
 
 <div
-	class:-translate-x-full={toggleSidebar}
-	class="w-full md:hidden focus:shadow-outline hover:w-56 z-20
-  bg-surface-700 space-y-6 mt-16 pt-5 px-2 absolute overflow-hidden
+	class:-translate-x-full={!toggleSidebar}
+	class="w-full md:hidden focus:shadow-outline z-20
+  bg-surface-300 space-y-6 mt-16 pt-5 px-2 absolute overflow-hidden
 	inset-y-0 left-0 transform transition delay-200 duration-700 ease-in-out"
 >
 	<!-- nav -->
@@ -19,7 +19,7 @@
 				type="button"
 				class="btn flex w-full rounded transition duration-200"
 			>
-				<div class="w-full flex justify-start">
+				<div class="w-full py-2 flex justify-start">
 					<div class="flex items-center h-6">
 						<svelte:component this={item.icon} name={item.icon} size={20} />
 					</div>
