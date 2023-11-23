@@ -1,6 +1,6 @@
 <script>
 	import { AppBar, LightSwitch } from '@skeletonlabs/skeleton';
-	import { IconBrandGithubFilled, IconHome, IconMenu2 } from '@tabler/icons-svelte';
+	import { IconBrandGithubFilled, IconBrandDiscordFilled, IconHome, IconMenu2 } from '@tabler/icons-svelte';
 	import { menuItems } from '$lib/utils/';
 
 	export let toggleSidebar = false;
