@@ -16,31 +16,34 @@
 	};
 </script>
 
-<section class="py-10 bg-surface-300">
-	<div class="grid justify-center gap-4 p-10 text-black">
+<section class="px-3 py-5 rounded-none lg:py-10 lg:px-5 card bg-surface-400">
+	<div class="grid justify-center gap-4 p-10 text-white">
 		<h1 class="font-bold text-center h1">Contact Us</h1>
 		<h3>Any questions or remarks? Just write us a message!</h3>
 	</div>
-	<div class="w-3/5 gap-4 p-1 mx-auto rounded-lg opacity-95 bg-slate-100 md:flex md:grid-cols-2">
-		<div class="p-6 card lg:w-1/3">
+	<div
+		class="w-auto gap-4 mx-auto border-transparent rounded-md sm:p-1 lg:w-3/5 opacity-95 bg-slate-100 md:flex md:grid-cols-2"
+	>
+		unded-md sm:p-1 lg:w-3/5 opacity-95 bg-slate-100 md:flex md:grid-cols-2">
+		<div class="p-6 text-white rounded-t-md sm:rounded-md bg-surface-600 lg:w-1/3">
 			<header class="font-medium card-header h3">Contact Information</header>
 			<section class="grid gap-5 mt-8 lg:mt-10 lg:gap-10">
 				<div class="flex gap-5">
-					<IconPhoneFilled class="" />
+					<IconPhoneFilled />
 					<span>+685 1234567</span>
 				</div>
 				<div class="flex gap-5">
-					<IconMailFilled class="" />
+					<IconMailFilled />
 					<span>admin@sso.com</span>
 				</div>
 				<div class="flex gap-5">
-					<IconMapPinFilled class="" />
+					<IconMapPinFilled />illed/>
 					<span>Apia, Samoa</span>
 				</div>
 			</section>
 		</div>
-		<form class="grid p-2 mx-auto lg:p-8" on:submit|preventDefault={handleSubmit}>
-			<div class="grid w-full text-black lg:gap-4 lg:grid-cols-2 md:gap-6">
+		<form class="grid w-full mx-auto lg:p-5" on:submit|preventDefault={handleSubmit}>
+			<div class="grid w-full gap-6 p-3 text-black md:p-5 md:grid-cols-2">
 				<label class="text-sm label">
 					<span>First Name</span>
 					<input
@@ -87,7 +90,7 @@
 					/>
 				</label>
 			</div>
-			<label class="mt-8 text-sm text-black label">
+			<label class="p-3 text-sm text-black lg:mt-4 label">
 				<span>Message</span>
 				<textarea
 					class="text-sm textarea variant-form-material"
@@ -97,11 +100,9 @@
 					required
 				/>
 			</label>
-
-			<button
-				type="submit"
-				class="mt-2 mb-6 rounded-lg md:justify-self-end btn variant-filled-secondary"
-			/>
+			<div class="mx-2 mt-2 mb-6 text-white bg-blue-500 rounded-xl md:justify-self-end btn">
+				<button type="submit"> Send message </button>
+			</div>
 		</form>
 	</div>
 </section>
