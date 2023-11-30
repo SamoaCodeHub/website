@@ -1,3 +1,3 @@
-import { menuItems } from "./menuItems";
+import { menuItems } from './menuItems';
 
 export { menuItems };
