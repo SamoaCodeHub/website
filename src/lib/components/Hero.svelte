@@ -3,7 +3,9 @@
 		<div class="flex flex-col xl:flex-row items-center space-x-0">
 			<div class="flex flex-col w-full xl:w-2/3">
 				<div class="flex flex-col space-y-4">
-					<h1 class="text-4xl sm:text-6xl md:text-7xl font-bold font-heading text-center xl:text-left">
+					<h1
+						class="text-4xl sm:text-6xl md:text-7xl font-bold font-heading text-center xl:text-left"
+					>
 						Innovate,
 						<div class="relative py-2 xl:py-4">
 							<span class="relative z-10 inline-block">

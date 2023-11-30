@@ -3,15 +3,18 @@
 Website for Samoa Stack Overflow
 
 ## Developing
+
 First clone this repository
 
 ### Installing dependencies
+
 ```bash
 cd sso-website
 npm install
 ```
 
 ### Running the project
+
 ```bash
 npm run dev
 
