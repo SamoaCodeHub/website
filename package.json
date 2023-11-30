@@ -10,7 +10,15 @@
     "lint": "prettier --plugin-search-dir . --check . && eslint .",
     "format": "prettier --plugin-search-dir . --write .",
     "test:integration": "playwright test",
-    "test:unit": "vitest"
+    "test:unit": "vitest",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.{js,ts,svelte,json,css,scss,html}": [
+      "npm run format",
+      "npx eslint --fix",
+      "git add ."
+    ]
   },
   "devDependencies": {
     "@playwright/test": "^1.28.1",
