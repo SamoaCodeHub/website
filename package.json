@@ -34,7 +34,7 @@
 		"eslint-plugin-svelte": "^2.30.0",
 		"husky": "^8.0.3",
 		"lint-staged": "^15.1.0",
-		"postcss": "^8.4.31",
+    "postcss": "^8.4.33",
 		"prettier": "^2.8.0",
 		"prettier-plugin-svelte": "^2.10.1",
 		"svelte": "^4.0.5",
@@ -47,5 +47,5 @@
 	"dependencies": {
 		"@floating-ui/dom": "1.5.2",
 		"@tabler/icons-svelte": "^2.39.0"
-	}
+    }
 }
