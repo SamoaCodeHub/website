@@ -3,12 +3,14 @@
 	import Media from "$lib/components/Media.svelte";
 	import Contact from "$lib/components/Contact.svelte";
 	import About from '$lib/components/About.svelte';
+	import Contributors from '$lib/components/Contributors.svelte';
 </script>
 
 <Hero/>
 <About />
 <Media/>
 <Contact/>
+<Contributors />
 
 <style lang="postcss">
 	figure {
@@ -42,4 +44,5 @@
 		}
 	}
 </style>
+
 
