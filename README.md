@@ -1,15 +1,33 @@
-# SSO Website
+# Samoa Stack Overflow Website
 
-Website for Samoa Stack Overflow
+The website for the Samoa Stack Overflow community, built with SvelteKit
 
-## Developing
+[![Contributors][contributors-shield]][contributors-url][![Stargazers][stars-shield]][stars-url][![Issues][issues-shield]][issues-url][![MIT License][license-shield]][license-url]
 
-First clone this repository
+![Samoan Flag](https://www.worldatlas.com/img/flag/ws-flag.jpg)
+
+## Languages & Tools
+
+* SvelteKit
+* Svelte
+* Tailwind CSS
+
+## Getting Started
+
+### Prerequisites
+
+* Node v18.18.1 (LTS)
+
+### Clone the Repo
+
+   ```sh
+   git clone https://github.com/Samoa-Stack-Overflow/sso-website.git
+   cd sso-website
+   ```
 
 ### Installing dependencies
 
 ```bash
-cd sso-website
 npm install
 ```
 
@@ -31,3 +49,19 @@ npm run build
 ```
 
 You can preview the production build with `npm run preview`.
+
+## Contributing
+
+Check out our [Contributions Guideline][contribution-url]
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
+[contributors-url]: https://github.com/Samoa-Stack-Overflow/sso-website/graphs/contributors
+[stars-shield]: https://img.shields.io/github/stars/github_username/repo_name.svg?style=for-the-badge
+[stars-url]: https://github.com/Samoa-Stack-Overflow/sso-website/stargazers
+[issues-shield]: https://img.shields.io/github/issues/github_username/repo_name.svg?style=for-the-badge
+[issues-url]: https://github.com/Samoa-Stack-Overflow/sso-website/issues
+[license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
+[license-url]: https://github.com/Samoa-Stack-Overflow/sso-website/blob/main/LICENSE.txt
+[contribution-url]: https://github.com/Samoa-Stack-Overflow/sso-website/blob/main/CONTRIBUTING.md
