@@ -56,12 +56,12 @@ Check out our [Contributions Guideline][contribution-url]
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/Samoa-Stack-Overflow/sso-website.svg?style=for-the-badge
 [contributors-url]: https://github.com/Samoa-Stack-Overflow/sso-website/graphs/contributors
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo_name.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/Samoa-Stack-Overflow/sso-website.svg?style=for-the-badge
 [stars-url]: https://github.com/Samoa-Stack-Overflow/sso-website/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo_name.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/Samoa-Stack-Overflow/sso-website.svg?style=for-the-badge
 [issues-url]: https://github.com/Samoa-Stack-Overflow/sso-website/issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/Samoa-Stack-Overflow/sso-website.svg?style=for-the-badge
 [license-url]: https://github.com/Samoa-Stack-Overflow/sso-website/blob/main/LICENSE.txt
 [contribution-url]: https://github.com/Samoa-Stack-Overflow/sso-website/blob/main/CONTRIBUTING.md
