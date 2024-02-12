@@ -4,6 +4,22 @@
 	import { menuItems } from '$lib/utils/';
 
 	export let toggleSidebar = false;
+
+	function scrollIntoView({ target }) {
+		const el = document.querySelector(target.getAttribute('href'));
+		if (!el) return;
+		el.scrollIntoView({
+			behavior: 'smooth'
+		});
+		const rect = el.getBoundingClientRect();
+
+		// Check if the element's top is within the visible viewport
+		if (rect.top < window.innerHeight) {
+			el.scrollIntoView({
+				behavior: 'smooth'
+			});
+		}
+	}
 </script>
 
 <AppBar shadow="shadow-2xl" slotTrail="!space-x-2">
@@ -24,11 +40,15 @@
 	</svelte:fragment>
 	<svelte:fragment slot="trail">
 		{#each menuItems as item}
-			<div class="relative hidden lg:block">
-				<button class="btn hover:variant-soft-primary">
-					<span>{item.name}</span>
-				</button>
-			</div>
+			<nav class="relative hidden lg:block">
+				<a
+					href={item.ref}
+					class="btn hover:variant-soft-primary"
+					on:click|preventDefault={scrollIntoView}
+				>
+					{item.name}
+				</a>
+			</nav>
 		{/each}
 
 		<div class="relative hidden lg:block">
