@@ -40,6 +40,16 @@ npm run dev
 npm run dev -- --open
 ```
 
+### Running Tests
+## e2e
+```bash
+# Make sure you install playwright browsers
+npx playwright install
+
+# Run e2e test
+npm run test:e2e
+```
+
 ## Building
 
 To create a production version of your app:
