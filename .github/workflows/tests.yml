@@ -1,0 +1,36 @@
+name: Run Tests
+
+on:
+  push:
+
+
+concurrency:
+  # Use github.run_id on main branch
+  # Use github.event.pull_request.number on pull requests, so it's unique per pull request
+  # Use github.ref on other branches, so it's unique per branch
+  group: ${{ github.workflow }}-${{ github.ref == 'refs/heads/main' && github.run_id || github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  e2e:
+    timeout-minutes: 5
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - name: Install dependencies
+        run: npm ci
+      - name: Install Playwright Browsers
+        run: npx playwright install --with-deps
+      - name: Run Playwright tests
+        run: npx playwright test
+        env:
+          VITE_PB_URL: ${{ secrets.PB_URL }}
+      - uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: playwright-report
+          path: playwright-report/
+          retention-days: 30
