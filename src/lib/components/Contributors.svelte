@@ -1,56 +1,58 @@
 <script>
+	import Andre from '../assets/images/andre-profile.jpeg';
+	import Alesana from '../assets/images/alesana-profile.jpeg';
+	import Eugene from '../assets/images/eugene-profile.jpeg';
+	import Ronaldo from '../assets/images/ronaldo-profile.jpeg';
+	import Chen from '../assets/images/chen-profile.jpeg';
+	import Antonio from '../assets/images/antonio-profile.jpeg';
+	import Aaron from '../assets/images/aaron-profile.jpeg';
+	import Junior from '../assets/images/junior-profile.jpeg';
+
 	const team = [
 		{
-			avatar:
-				'https://media.licdn.com/dms/image/C5603AQF96hEOxocorQ/profile-displayphoto-shrink_800_800/0/1612247349177?e=1707350400&v=beta&t=AAl9k5iLeIPD950nwme9yNP451pYxm5DOQkjef1yULI',
+			avatar: Andre,
 			name: 'Andre Westerlund',
 			title: 'Web Developer',
 			github: 'https://github.com/westerandr',
 			linkedin: 'https://www.linkedin.com/in/andrewesterlund/'
 		},
 		{
-			avatar:
-				'https://media.licdn.com/dms/image/C5603AQHa-RTuA96r0A/profile-displayphoto-shrink_800_800/0/1633551986274?e=1707350400&v=beta&t=WUduQmMlMpQV2pm8gxdgWB24CN-YYuwQL0WHWRSEb2U',
+			avatar: Alesana,
 			name: 'Alesana Eteuati Jr',
 			title: 'Web Developer',
 			github: 'https://github.com/Green-Ranger11',
 			linkedin: 'https://www.linkedin.com/in/alesana-eteuati-jr/'
 		},
 		{
-			avatar:
-				'https://media.licdn.com/dms/image/C5603AQGq-HV2nhm-2Q/profile-displayphoto-shrink_800_800/0/1584357861892?e=1707350400&v=beta&t=tujfxEBbaBXJOl1dZf-oPDN_CwLV-INkxovLb0AqSpk',
+			avatar: Eugene,
 			name: 'Eugene Barker',
 			title: 'Web Developer',
 			github: 'https://github.com/genebarker',
 			linkedin: 'https://www.linkedin.com/in/eugenebarker/'
 		},
 		{
-			avatar:
-				'https://media.licdn.com/dms/image/D5603AQG3eKB-z6Yrdw/profile-displayphoto-shrink_800_800/0/1694131281484?e=1707350400&v=beta&t=dTfmL1FLRfRytiTh9FpLOtCfAp0ejJcoZiOUBq4LzQ4',
+			avatar: Chen,
 			name: 'Chia Chen Lin',
 			title: 'Web Developer',
 			github: 'https://github.com/shifu-lin',
 			linkedin: 'https://www.linkedin.com/in/chia-chen-lin-8625251b9/'
 		},
 		{
-			avatar:
-				'https://media.licdn.com/dms/image/C4E03AQE9wLhve8D0dQ/profile-displayphoto-shrink_800_800/0/1579942825342?e=1707350400&v=beta&t=usfRSbuOVMY0J5-GQ0qXKVTOhGjHdAqXgVimjDMKw4w',
+			avatar: Junior,
 			name: 'Junior Latu',
 			title: 'Web Developer',
 			github: 'https://github.com/jrlatu',
 			linkedin: 'https://www.linkedin.com/in/talavou-junior-latu/'
 		},
 		{
-			avatar:
-				'https://media.licdn.com/dms/image/C5603AQG-j140bIa1_A/profile-displayphoto-shrink_800_800/0/1602417391446?e=1707350400&v=beta&t=s11aqv2nDeRV_fJi3OM_fOuVJY354QfgLhLu0fzcesI',
+			avatar: Ronaldo,
 			name: 'Ronaldo Pose',
 			title: 'Web Developer',
 			github: 'https://github.com/renaldox',
 			linkedin: 'https://www.linkedin.com/in/ronaldo-pose/'
 		},
 		{
-			avatar:
-				'https://media.licdn.com/dms/image/C5603AQFOSEJrDt3IiQ/profile-displayphoto-shrink_800_800/0/1531796855324?e=1707350400&v=beta&t=deBvBt69Ql1JbmTGcmSEnRRoZYEDqBlzZz38RZ1SsKQ',
+			avatar: Aaron,
 			name: 'Aaron Solofa',
 			title: 'Web Developer',
 			github: 'https://github.com/aaronjamessolofa',
@@ -65,8 +67,7 @@
 			linkedin: 'https://www.linkedin.com/in/ken-lui-15017a232/'
 		},
 		{
-			avatar:
-				'https://media.licdn.com/dms/image/C4D03AQE3IslXSe1M1g/profile-displayphoto-shrink_200_200/0/1656938080813?e=1712793600&v=beta&t=DvaaCbP1X-Gmd-ieiuw9lLvX6svdDxtvmAl1vD2vDqI',
+			avatar: Antonio,
 			name: 'Antonio Chadwick',
 			title: 'Web Developer',
 			github: 'https://github.com/antoniochadwick',
