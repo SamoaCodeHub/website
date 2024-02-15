@@ -46,6 +46,7 @@
 	"type": "module",
 	"dependencies": {
 		"@floating-ui/dom": "1.5.2",
-		"@tabler/icons-svelte": "^2.39.0"
+		"@tabler/icons-svelte": "^2.39.0",
+        "svelte-vertical-timeline": "^1.0.0"
 	}
 }
