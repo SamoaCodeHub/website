@@ -1,5 +1,5 @@
 <script>
-	import { SectionName } from '$lib/utils';
+	import { Section } from '$lib/utils';
 	import {
 		Timeline,
 		TimelineItem,
@@ -40,7 +40,7 @@
 	];
 </script>
 
-<div id={SectionName.About} class="container bg-transparent py-12 mx-auto w-full">
+<div id={Section.About} class="container bg-transparent py-12 mx-auto w-full">
 	<h1 class="text-4xl font-bold text-center">Samoa Stack Overflow - Our Journey in Code</h1>
 	<Timeline position="alternate" style={'padding: 50px 0;'}>
 		{#each options as option}

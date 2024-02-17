@@ -1,5 +1,5 @@
 <script>
-	import { SectionName } from '$lib/utils';
+	import { Section } from '$lib/utils';
 	import { IconMailFilled, IconPhoneFilled, IconMapPinFilled } from '@tabler/icons-svelte';
 
 	let firstname = '';
@@ -17,7 +17,7 @@
 	};
 </script>
 
-<section id={SectionName.Contact} class="px-3 py-5 rounded-none lg:py-10 lg:px-5 card bg-surface-400">
+<section id={Section.Contact} class="px-3 py-5 rounded-none lg:py-10 lg:px-5 card bg-surface-400">
 	<div class="grid justify-center gap-4 p-10 text-white">
 		<h1 class="font-bold text-center h1">Contact Us</h1>
 		<h3>Any questions or remarks? Just write us a message!</h3>

@@ -1,6 +1,6 @@
 import { IconCar } from '@tabler/icons-svelte';
 
-export const SectionName = {
+export const Section = {
   Hero: 'Hero',
   Media: 'Media',
   Contributors: 'Contributors',
@@ -10,27 +10,27 @@ export const SectionName = {
 
 export const menuItems = [
   {
-    ref: `#${SectionName.Hero}`,
+    ref: `#${Section.Hero}`,
     name: 'Welcome',
     icon: IconCar
   },
   {
-    ref: `#${SectionName.About}`,
+    ref: `#${Section.About}`,
     name: 'About',
     icon: IconCar
   },
   {
-    ref: `#${SectionName.Media}`,
+    ref: `#${Section.Media}`,
     name: 'Media',
     icon: IconCar
   },
   {
-    ref: `#${SectionName.Contributors}`,
+    ref: `#${Section.Contributors}`,
     name: 'Contributors',
     icon: IconCar
   },
   {
-    ref: `#${SectionName.Contact}`,
+    ref: `#${Section.Contact}`,
     name: 'Contact Us',
     icon: IconCar
   },
