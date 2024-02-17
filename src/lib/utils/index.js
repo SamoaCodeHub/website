@@ -1,3 +1,3 @@
-import { menuItems } from './menuItems';
+import { menuItems, SectionName } from './menuItems';
 
-export { menuItems };
+export { menuItems, SectionName  };
