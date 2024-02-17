@@ -1,4 +1,9 @@
-<section id="section1" class="py-8 md:py-24 text-white">
+<script>
+	import { SectionName } from '$lib/utils';
+
+</script>
+
+<section id={SectionName.HERO} class="py-8 md:py-24 text-white">
 	<div class="max-w-screen-xl mx-auto px-3 md:px-10">
 		<div class="flex flex-col xl:flex-row items-center space-x-0">
 			<div class="flex flex-col w-full xl:w-2/3">
