@@ -9,5 +9,5 @@
 <Hero />
 <About />
 <Media />
-<Contact />
 <Contributors />
+<Contact />
