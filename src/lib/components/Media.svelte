@@ -1,13 +1,15 @@
 <script>
+	import { SectionName } from '$lib/utils';
 	import lunchSita from '../assets/images/lunch_sita.jpg';
 	import sprintMeeting from '../assets/images/sprint_meeting.jpg';
 	import ssoLunch1 from '../assets/images/sso_lunch.jpg';
 	import ssoLunch2 from '../assets/images/sso_lunch_2.jpg';
 	import ssoLunch3 from '../assets/images/sso_lunch_3.jpg';
 	import workshop from '../assets/images/workshop.jpg';
+
 </script>
 
-<section id="section2" class="w-full">
+<section id={SectionName.MEDIA} class="w-full">
 	<div class="container px-5 py-2 lg:px-32 lg:py-24 text-white mx-auto">
 		<h1
 			class="text-center h1 font-bold border-yellow-50 py-7 drop-shadow-xl dark:shadow-none md:pb-[5%]"
