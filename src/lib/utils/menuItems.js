@@ -1,36 +1,36 @@
 import { IconCar } from '@tabler/icons-svelte';
 
 export const SectionName = {
-  HERO: 'Hero',
-  MEDIA: 'Media',
-  CONTRIBUTORS: 'Contributors',
-  CONTACT: 'Contact',
-  ABOUT: 'About',
+  Hero: 'Hero',
+  Media: 'Media',
+  Contributors: 'Contributors',
+  Contact: 'Contact',
+  About: 'About',
 }
 
 export const menuItems = [
   {
-    ref: `#${SectionName.HERO}`,
+    ref: `#${SectionName.Hero}`,
     name: 'Welcome',
     icon: IconCar
   },
   {
-    ref: `#${SectionName.ABOUT}`,
+    ref: `#${SectionName.About}`,
     name: 'About',
     icon: IconCar
   },
   {
-    ref: `#${SectionName.MEDIA}`,
+    ref: `#${SectionName.Media}`,
     name: 'Media',
     icon: IconCar
   },
   {
-    ref: `#${SectionName.CONTRIBUTORS}`,
+    ref: `#${SectionName.Contributors}`,
     name: 'Contributors',
     icon: IconCar
   },
   {
-    ref: `#${SectionName.CONTACT}`,
+    ref: `#${SectionName.Contact}`,
     name: 'Contact Us',
     icon: IconCar
   },
