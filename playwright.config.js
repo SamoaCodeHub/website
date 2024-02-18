@@ -2,6 +2,7 @@
 const config = {
 	webServer: {
 		command: 'npm run build && npm run preview',
+		timeout: 180 * 1000,
 		port: 4173
 	},
 	testDir: 'tests',

@@ -8,22 +8,22 @@ The website for the Samoa Stack Overflow community, built with SvelteKit
 
 ## Languages & Tools
 
-* SvelteKit
-* Svelte
-* Tailwind CSS
+- SvelteKit
+- Svelte
+- Tailwind CSS
 
 ## Getting Started
 
 ### Prerequisites
 
-* Node v18.18.1 (LTS)
+- Node v18.18.1 (LTS)
 
 ### Clone the Repo
 
-   ```sh
-   git clone https://github.com/Samoa-Stack-Overflow/sso-website.git
-   cd sso-website
-   ```
+```sh
+git clone https://github.com/Samoa-Stack-Overflow/sso-website.git
+cd sso-website
+```
 
 ### Installing dependencies
 
@@ -41,7 +41,9 @@ npm run dev -- --open
 ```
 
 ### Running Tests
+
 ## e2e
+
 ```bash
 # Make sure you install playwright browsers
 npx playwright install
@@ -66,6 +68,7 @@ Check out our [Contributions Guideline][contribution-url]
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
 [contributors-shield]: https://img.shields.io/github/contributors/Samoa-Stack-Overflow/sso-website.svg?style=for-the-badge
 [contributors-url]: https://github.com/Samoa-Stack-Overflow/sso-website/graphs/contributors
 [stars-shield]: https://img.shields.io/github/stars/Samoa-Stack-Overflow/sso-website.svg?style=for-the-badge
