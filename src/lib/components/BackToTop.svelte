@@ -1,6 +1,7 @@
 <script>
+	import { menuItems } from '$lib/utils/menuItems';
 	function scrollSmooth() {
-		const el = document.querySelector('#section1');
+		const el = document.querySelector(menuItems[0].ref);
 		el.scrollIntoView({
 			behavior: 'smooth'
 		});
