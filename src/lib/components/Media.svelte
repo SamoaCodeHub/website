@@ -9,9 +9,9 @@
 </script>
 
 <section id={Section.Media} class="w-full">
-	<div class="container px-5 py-2 lg:px-32 lg:py-24 text-white mx-auto">
+	<div class="container px-5 py-2 lg:px-32 lg:pb-24 text-white mx-auto">
 		<h1
-			class="text-center h1 font-bold border-yellow-50 py-7 drop-shadow-xl dark:shadow-none md:pb-[5%]"
+			class="text-center h1 font-bold border-yellow-50 pb-7 drop-shadow-xl dark:shadow-none md:pb-[5%]"
 		>
 			Samoa Stack Overflow <br /> Meet Ups
 		</h1>
