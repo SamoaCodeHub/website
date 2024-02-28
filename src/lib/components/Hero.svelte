@@ -2,7 +2,7 @@
 	import { Section } from '$lib/utils';
 </script>
 
-<section id={Section.Hero} class="py-8 md:py-24 text-white">
+<section id={Section.Hero} class="py-8 md:py-24 text-black dark:text-white">
 	<div class="max-w-screen-xl mx-auto px-3 md:px-10">
 		<div class="flex flex-col xl:flex-row items-center space-x-0">
 			<div class="flex flex-col w-full xl:w-2/3">
@@ -33,7 +33,12 @@
 						<p class="sr-only">
 							Press Join us Now to find out more about becoming a Samoa Stack Overflow Member
 						</p>
-						<button class="btn bg-blue-500 w-full rounded-xl">Join us now</button>
+						<a
+							rel="external"
+							target="_blank"
+							href="https://docs.google.com/forms/d/e/1FAIpQLSckLWtZky5-jGFWi4HnzuCQC3F1af3-LaCYhRrU5NCK36HJ4g/viewform"
+							class="bg-blue-500 hover:bg-blue-600 rounded-xl px-14 py-3">Join us Now</a
+						>
 					</div>
 					<div class="flex-1 flex flex-row sm:gap-2 text-sm sm:text-base justify-center">
 						<div
