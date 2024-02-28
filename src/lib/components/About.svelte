@@ -59,7 +59,7 @@
 						</a>
 					</h3>
 
-					<p>{option.description}</p>
+					<p class="text-black dark:text-white">{option.description}</p>
 				</TimelineContent>
 			</TimelineItem>
 		{/each}
@@ -74,8 +74,7 @@
 	}
 	p {
 		letter-spacing: 1.5px;
-		margin: 0;
-		color: #d3d3d3;
+		margin: 0; 
 		font-size: 14px;
 	}
 </style>
