@@ -7,10 +7,10 @@
 	gridColumns="grid grid-cols-1 sm:grid-cols-3"
 	slotLead="sm:place-self-start place-self-center"
 	shadow="shadow-2xl"
-	slotTrail="sm:place-self-end place-self-center !space-x-2 flex flex-wrap text-sm md:text-base lg:text-lg"
+	slotTrail="sm:place-self-end place-self-center !space-x-2 flex text-sm md:text-base"
 >
 	<svelte:fragment slot="lead">
-		<div class="flex items-center space-x-4 border border-black border-solid">
+		<div class="flex items-center space-x-4">
 			<a
 				title="Dive into the code"
 				class="hidden btn btn-sm variant-ghost-surface sm:block"
@@ -64,46 +64,6 @@
 		</div>
 	</svelte:fragment>
 	<svelte:fragment slot="trail">
-		<div class="border border-black border-solid">
-			Copyright © {new Date().getFullYear()} Samoa Stack Overflow. All Rights Reserved.
-		</div>
+		Copyright © {new Date().getFullYear()} Samoa Stack Overflow. All Rights Reserved.
 	</svelte:fragment>
 </AppBar>
-
-	<div class="flex items-center justify-center">
-		<div class="flex items-center flex-grow space-x-4 border border-black border-solid">
-			<a
-				title="Dive into the code"
-				class="btn btn-sm variant-ghost-surface"
-				href="https://github.com/Samoa-Stack-Overflow"
-				target="_blank"
-			>
-				GitHub
-			</a>
-
-			&nbsp;&nbsp;
-			<a
-				title="Join us on Discord"
-				class="btn btn-sm variant-ghost-surface"
-				href="https://forms.gle/aoTeV9jF5h7wnqAG6"
-				target="_blank"
-			>
-				Discord
-			</a>
-			&nbsp;&nbsp;
-			<a
-				title="Get the latest on Facebook"
-				class="btn btn-sm variant-ghost-surface"
-				href="https://www.facebook.com/groups/948415479224570"
-				target="_blank"
-			>
-				Facebook
-			</a>
-		</div>
-
-		<div class="border border-black border-solid">
-			Copyright © {new Date().getFullYear()} Samoa Stack Overflow. All Rights Reserved.
-			RIGHT SIDE
-		</div>
-	</div>
-</AppBar> -->
