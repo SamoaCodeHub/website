@@ -7,6 +7,9 @@
 	import Antonio from '../assets/images/antonio-profile.jpeg';
 	import Aaron from '../assets/images/aaron-profile.jpeg';
 	import Junior from '../assets/images/junior-profile.jpeg';
+	import Tausani from '../assets/images/tausani-profile.jpeg';
+	import Ainsof from '../assets/images/ainsof-profile.jpeg';
+	import Hilton from '../assets/images/hilton-profile.jpeg';
 	import { Section } from '$lib/utils';
 
 	const team = [
@@ -73,6 +76,27 @@
 			title: 'Web Developer',
 			github: 'https://github.com/antoniochadwick',
 			linkedin: 'https://www.linkedin.com/in/antonio-chadwick-8ab853141'
+		},
+		{
+			avatar: Tausani,
+			name: 'Tausani Ah Chong',
+			title: 'Software Engineer',
+			github: 'https://github.com/tausani-ah-chong',
+			linkedin: 'https://www.linkedin.com/in/tausaniahchong'
+		},
+		{
+			avatar: Ainsof,
+			name: "Ainsof So'o",
+			title: 'Systems Developer & Analyst',
+			github: 'https://github.com',
+			linkedin: 'https://www.linkedin.com/in/ainsofs'
+		},
+		{
+			avatar: Hilton,
+			name: "Hilton So'o",
+			title: 'Managing Director',
+			github: 'https://github.com',
+			linkedin: 'https://www.linkedin.com/in/hilton-samuelu-so-o-8711aa103'
 		}
 	];
 </script>
@@ -91,7 +115,7 @@
 			>
 				<img class="w-40 h-40 rounded-full" src={avatar} alt="Avatar" />
 				<h5 class="pt-5 text-xl font-semibold">{name}</h5>
-				<span class="pt-2 text-sm">{title}</span>
+				<span class="pt-2 text-sm text-wrap">{title}</span>
 				<div class="flex flex-row pt-10 icon-container">
 					<a href={github}>
 						<svg class="px-2" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 496 512"
