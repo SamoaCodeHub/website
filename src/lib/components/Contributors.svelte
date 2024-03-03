@@ -16,49 +16,49 @@
 		{
 			avatar: Andre,
 			name: 'Andre Westerlund',
-			title: 'Web Developer',
+			title: 'Full Stack Developer',
 			github: 'https://github.com/westerandr',
 			linkedin: 'https://www.linkedin.com/in/andrewesterlund/'
 		},
 		{
 			avatar: Alesana,
 			name: 'Alesana Eteuati Jr',
-			title: 'Web Developer',
+			title: 'Senior Software Developer',
 			github: 'https://github.com/Green-Ranger11',
 			linkedin: 'https://www.linkedin.com/in/alesana-eteuati-jr/'
 		},
 		{
 			avatar: Eugene,
 			name: 'Eugene Barker',
-			title: 'Web Developer',
+			title: 'Solutions Architect',
 			github: 'https://github.com/genebarker',
 			linkedin: 'https://www.linkedin.com/in/eugenebarker/'
 		},
 		{
 			avatar: Chen,
 			name: 'Chia Chen Lin',
-			title: 'Web Developer',
+			title: 'Software Developer',
 			github: 'https://github.com/shifu-lin',
 			linkedin: 'https://www.linkedin.com/in/chia-chen-lin-8625251b9/'
 		},
 		{
 			avatar: Junior,
 			name: 'Junior Latu',
-			title: 'Web Developer',
+			title: 'Software Developer',
 			github: 'https://github.com/jrlatu',
 			linkedin: 'https://www.linkedin.com/in/talavou-junior-latu/'
 		},
 		{
 			avatar: Ronaldo,
 			name: 'Ronaldo Pose',
-			title: 'Web Developer',
+			title: 'Business Solutions Manager',
 			github: 'https://github.com/renaldox',
 			linkedin: 'https://www.linkedin.com/in/ronaldo-pose/'
 		},
 		{
 			avatar: Aaron,
 			name: 'Aaron Solofa',
-			title: 'Web Developer',
+			title: 'GIS Specialist',
 			github: 'https://github.com/aaronjamessolofa',
 			linkedin: 'https://www.linkedin.com/in/aaron-solofa-06b923123/'
 		},
@@ -73,7 +73,7 @@
 		{
 			avatar: Antonio,
 			name: 'Antonio Chadwick',
-			title: 'Web Developer',
+			title: 'IT Engineer',
 			github: 'https://github.com/antoniochadwick',
 			linkedin: 'https://www.linkedin.com/in/antonio-chadwick-8ab853141'
 		},
