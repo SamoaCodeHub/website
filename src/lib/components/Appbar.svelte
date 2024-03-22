@@ -58,7 +58,7 @@
 		<section class="hidden px-5 space-x-1 sm:inline-flex">
 			<a
 				class="btn-icon hover:variant-soft-primary"
-				href="https://github.com/Samoa-Stack-Overflow"
+				href="https://github.com/Samoa-Code-Hub"
 				target="_blank"
 				rel="noreferrer"
 			>
