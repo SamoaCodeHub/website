@@ -9,55 +9,55 @@
 </script>
 
 <section id={Section.Media} class="w-full">
-	<div class="container px-5 py-2 lg:px-32 lg:pb-24 text-white mx-auto">
+	<div class="container px-5 py-2 mx-auto text-white lg:px-32 lg:pb-24">
 		<h1
 			class="text-center h1 font-bold border-yellow-50 pb-7 drop-shadow-xl dark:shadow-none md:pb-[5%]"
 		>
-			Samoa Stack Overflow <br /> Meet Ups
+			Samoa Code Hub <br /> Meet Ups
 		</h1>
-		<div class="-m-1 flex flex-wrap md:-m-2">
-			<div class="flex w-full flex-wrap lg:w-1/2">
+		<div class="flex flex-wrap -m-1 md:-m-2">
+			<div class="flex flex-wrap w-full lg:w-1/2">
 				<div class="w-full p-1 md:p-2 md:w-1/2">
 					<img
 						alt="gallery"
-						class="block h-full w-full rounded-lg object-cover object-center"
+						class="block object-cover object-center w-full h-full rounded-lg"
 						src={ssoLunch3}
 					/>
 				</div>
 				<div class="w-full p-1 md:p-2 md:w-1/2">
 					<img
 						alt="gallery"
-						class="block h-full w-full rounded-lg object-cover object-center"
+						class="block object-cover object-center w-full h-full rounded-lg"
 						src={lunchSita}
 					/>
 				</div>
 				<div class="w-full p-1 md:p-2">
 					<img
 						alt="gallery"
-						class="block h-full w-full rounded-lg object-cover object-center"
+						class="block object-cover object-center w-full h-full rounded-lg"
 						src={workshop}
 					/>
 				</div>
 			</div>
-			<div class="flex w-full flex-wrap lg:w-1/2">
+			<div class="flex flex-wrap w-full lg:w-1/2">
 				<div class="w-full p-1 md:p-2">
 					<img
 						alt="gallery"
-						class="block h-full w-full rounded-lg object-cover object-center"
+						class="block object-cover object-center w-full h-full rounded-lg"
 						src={ssoLunch1}
 					/>
 				</div>
 				<div class="w-full p-1 md:p-2 md:w-1/2">
 					<img
 						alt="gallery"
-						class="block h-full w-full rounded-lg object-cover object-center"
+						class="block object-cover object-center w-full h-full rounded-lg"
 						src={ssoLunch2}
 					/>
 				</div>
 				<div class="w-full p-1 md:p-2 md:w-1/2">
 					<img
 						alt="gallery"
-						class="block h-full w-full rounded-lg object-cover object-center"
+						class="block object-cover object-center w-full h-full rounded-lg"
 						src={sprintMeeting}
 					/>
 				</div>

@@ -34,7 +34,7 @@
 				</div>
 				<div class="flex gap-5">
 					<IconMailFilled />
-					<span>admin@sso.com</span>
+					<span>admin@sch.com</span>
 				</div>
 				<div class="flex gap-5">
 					<IconMapPinFilled />

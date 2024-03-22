@@ -64,6 +64,6 @@
 		</div>
 	</svelte:fragment>
 	<svelte:fragment slot="trail">
-		Copyright © {new Date().getFullYear()} Samoa Stack Overflow. All Rights Reserved.
+		Copyright © {new Date().getFullYear()} Samoa Code Hub. All Rights Reserved.
 	</svelte:fragment>
 </AppBar>
