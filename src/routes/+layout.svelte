@@ -27,7 +27,7 @@
 		<Appbar bind:toggleSidebar />
 	</svelte:fragment>
 	<svelte:fragment slot="sidebarLeft">
-		<Sidebar {toggleSidebar} />
+		<Sidebar bind:toggleSidebar />
 	</svelte:fragment>
 	<!-- Page Route Content -->
 	<slot />

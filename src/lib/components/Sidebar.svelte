@@ -15,7 +15,10 @@
 	<div class="btn-group-vertical w-full">
 		{#each menuItems as item}
 			<button
-				on:click={() => goto(item.ref)}
+				on:click={() => {
+					goto(item.ref);
+					toggleSidebar = false;
+				}}
 				type="button"
 				class="btn flex w-full rounded transition duration-200"
 			>
