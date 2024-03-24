@@ -11,17 +11,17 @@
 	} from 'svelte-vertical-timeline';
 	const options = [
 		{
-			title: 'Launched SSO Facebook Group',
+			title: 'Launched SCH Facebook Group',
 			time: 'August 2021',
 			description:
-				'Created SSO Facebook group as a central hub for information sharing within our community',
+				'Created SCH Facebook group as a central hub for information sharing within our community',
 			url: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
 		},
 		{
-			title: 'Created SSO Discord Channel',
+			title: 'Created SCH Discord Channel',
 			time: 'September 2021',
 			description:
-				'Started a Discord Channel facilitating streamlined communication and collaboration for SSO members',
+				'Started a Discord Channel facilitating streamlined communication and collaboration for SCH members',
 			url: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
 		},
 		{
@@ -31,17 +31,17 @@
 			url: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
 		},
 		{
-			title: 'Launched SSO Website',
+			title: 'Launched SCH Website',
 			time: 'March 2024',
 			description:
-				'Unveiled the official SSO Website, streamlining user access and enhacing information sharing within',
+				'Unveiled the official SCH Website, streamlining user access and enhacing information sharing within',
 			url: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
 		}
 	];
 </script>
 
-<div id={Section.About} class="container bg-transparent py-12 mx-auto w-full">
-	<h1 class="text-4xl font-bold text-center">Samoa Stack Overflow - Our Journey in Code</h1>
+<div id={Section.About} class="container w-full py-12 mx-auto bg-transparent">
+	<h1 class="text-4xl font-bold text-center">Samoa Code Hub - Our Journey in Code</h1>
 	<Timeline position="alternate" style={'padding: 50px 0;'}>
 		{#each options as option}
 			<TimelineItem>
@@ -74,7 +74,7 @@
 	}
 	p {
 		letter-spacing: 1.5px;
-		margin: 0; 
+		margin: 0;
 		font-size: 14px;
 	}
 </style>
