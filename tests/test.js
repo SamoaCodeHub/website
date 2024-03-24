@@ -4,14 +4,14 @@ test('Hero section has expected p', async ({ page }) => {
 	await page.goto('/');
 	await expect(
 		page.getByText(
-			'Press Join us Now to find out more about becoming a Samoa Stack Overflow Member'
+			'Press Join us Now to find out more about becoming a Samoa Code Hub Member'
 		)
 	).toBeVisible();
 });
 
 test('Media section has expected h1', async ({ page }) => {
 	await page.goto('/');
-	await expect(page.getByText('Samoa Stack Overflow Meet Ups')).toBeVisible();
+	await expect(page.getByText('Samoa Code Hub Meet Ups')).toBeVisible();
 });
 
 test('Contact section has expected h1', async ({ page }) => {
