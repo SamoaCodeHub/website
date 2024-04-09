@@ -27,7 +27,7 @@
 		<div class="flex items-center space-x-4">
 			<!-- Hamburger Menu -->
 			<button
-				class="btn-icon btn-icon-sm md:!hidden"
+				class="btn-icon btn-icon-sm lg:hidden"
 				on:click={() => (toggleSidebar = !toggleSidebar)}
 			>
 				<IconMenu2 />
