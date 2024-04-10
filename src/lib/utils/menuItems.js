@@ -5,7 +5,8 @@ export const Section = {
 	Media: 'Media',
 	Contributors: 'Contributors',
 	Contact: 'Contact',
-	About: 'About'
+	About: 'About',
+	Projects: 'Projects',
 };
 
 export const menuItems = [
@@ -18,6 +19,11 @@ export const menuItems = [
 		ref: `#${Section.About}`,
 		name: 'About',
 		icon: IconCode
+	},
+	{
+		ref: `#${Section.Projects}`,
+		name: 'Projects',
+		icon: IconCar
 	},
 	{
 		ref: `#${Section.Media}`,
