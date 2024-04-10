@@ -60,44 +60,6 @@ To create a production version of your app:
 npm run build
 ```
 
-## Working with Docker
-
-You need docker and docker compose installed for the following steps.
-
-Copy .env-default as .env
-
-```bash
-cp .env-default .env
-```
-
-Start containers
-
-```bash
-docker compose up -d
-```
-
-Access the dev environment on http://sso.docker.localhost:5173
-
-To run node commands on CLI run:
-
-```bash
-docker compose exec node sh
-```
-
-Then execute your commands e.g. npm run build
-
-### Tip: Use alias'
-
-```bash
-alias dlup='docker compose up -d; docker compose logs -f node'
-alias dup='docker compose up -d'
-alias dstop='docker compose stop'
-alias dnode='docker compose exec node bash'
-alias dlnode='docker compose logs -f node'
-alias dc='docker compose'
-```
-
-
 You can preview the production build with `npm run preview`.
 
 ## Contributing
