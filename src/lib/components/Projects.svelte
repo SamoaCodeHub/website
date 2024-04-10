@@ -53,7 +53,7 @@
 				<div class="flex gap-2 mt-4">
 					<a
 						rel="external"
-						href="#"
+						href="#/"
 						class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded flex items-center"
 					>
 						<IconClick class="mr-2" /> Try it Now
