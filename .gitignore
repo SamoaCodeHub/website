@@ -38,3 +38,4 @@ mutagen.yml.lock
 .env.*
 !.env.example
 node_modules/
+/build
