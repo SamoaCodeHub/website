@@ -62,6 +62,11 @@ npm run build
 
 You can preview the production build with `npm run preview`.
 
+## Analytics
+
+To enable analytics set up Google Analytics set the GA_MEASUREMENT_ID env
+variable.
+
 ## Contributing
 
 Check out our [Contributions Guideline][contribution-url]
