@@ -9,7 +9,7 @@
 </script>
 
 <section id={Section.Media} class="w-full">
-	<div class="container px-5 py-2 mx-auto text-white lg:px-32 lg:pb-24">
+	<div class="container px-5 py-2 mx-auto lg:px-32 lg:pb-24">
 		<h1
 			class="text-center h1 font-bold border-yellow-50 pb-7 drop-shadow-xl dark:shadow-none md:pb-[5%]"
 		>
