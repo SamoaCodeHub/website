@@ -23,7 +23,7 @@ export const menuItems = [
 	{
 		ref: `#${Section.Projects}`,
 		name: 'Projects',
-		icon: IconCar
+		icon: IconUsers
 	},
 	{
 		ref: `#${Section.Media}`,
