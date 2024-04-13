@@ -15,3 +15,4 @@ yarn.lock
 .vscode/settings.json
 jsconfig.json
 package.json
+vercel.json
