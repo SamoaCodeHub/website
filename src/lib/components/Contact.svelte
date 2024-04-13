@@ -1,24 +1,54 @@
 <script>
 	import { Section } from '$lib/utils';
 	import { IconMailFilled, IconPhoneFilled, IconMapPinFilled } from '@tabler/icons-svelte';
+	import { dev } from '$app/environment';
+
+	const formSpree = import.meta.env.VITE_FORMSPREE;
 
 	let firstname = '';
 	let lastname = '';
 	let email = '';
 	let phone = '';
 	let message = '';
+	let status = '';
 
-	const handleSubmit = () => {
-		console.log('First Name:', firstname);
-		console.log('Last Name:', lastname);
-		console.log('Email:', email);
-		console.log('Phone:', phone);
-		console.log('Message:', message);
-	};
+	async function handleSubmit(event) {
+		const data = new FormData(event.target);
+		if (dev) {
+			status = 'Thanks for your submission!';
+			return;
+		}
+		try {
+			const response = await fetch(event.target.action, {
+				method: 'POST',
+				body: data,
+				headers: {
+					Accept: 'application/json'
+				}
+			});
+			if (response.ok) {
+				status = 'Thanks for your submission!';
+				firstname = '';
+				lastname = '';
+				email = '';
+				phone = '';
+				message = '';
+			} else {
+				const data = await response.json();
+				if (Object.hasOwn(data, 'errors')) {
+					status = data['errors'].map((error) => error['message']).join(', ');
+				} else {
+					status = 'Oops! There was a problem submitting your form';
+				}
+			}
+		} catch (error) {
+			status = 'Oops! There was a problem submitting your form';
+		}
+	}
 </script>
 
 <section id={Section.Contact} class="px-3 py-5 rounded-none lg:py-10 lg:px-5 card bg-surface-400">
-	<div class="grid justify-center gap-4 p-10 ">
+	<div class="grid justify-center gap-4 p-10">
 		<h1 class="font-bold text-center h1">Contact Us</h1>
 		<h3>Any questions or remarks? Just write us a message!</h3>
 	</div>
@@ -42,13 +72,19 @@
 				</div>
 			</section>
 		</div>
-		<form class="grid w-full mx-auto lg:p-5" on:submit|preventDefault={handleSubmit}>
+		<form
+			action={formSpree}
+			on:submit|preventDefault={handleSubmit}
+			class="grid w-full mx-auto lg:p-5"
+			method="POST"
+		>
 			<div class="grid w-full gap-6 p-3 text-black md:p-5 md:grid-cols-2">
 				<label class="text-sm label">
 					<span>First Name</span>
 					<input
 						class="text-sm input variant-form-material"
 						type="text"
+						name="firstName"
 						placeholder="Enter first name"
 						bind:value={firstname}
 						required
@@ -60,6 +96,7 @@
 					<input
 						class="text-sm input variant-form-material"
 						type="text"
+						name="lastName"
 						placeholder="Enter last name"
 						bind:value={lastname}
 						required
@@ -70,7 +107,8 @@
 					<span>Email</span>
 					<input
 						class="text-sm input variant-form-material"
-						type="text"
+						type="email"
+						name="email"
 						placeholder="Enter email address"
 						bind:value={email}
 						required
@@ -85,6 +123,7 @@
 					<input
 						class="text-sm input variant-form-material"
 						type="text"
+						name="phone"
 						placeholder="Enter phone number"
 						bind:value={phone}
 					/>
@@ -96,6 +135,7 @@
 					class="text-sm textarea variant-form-material"
 					rows="4"
 					placeholder="Write your message."
+					name="message"
 					bind:value={message}
 					required
 				/>
@@ -103,6 +143,7 @@
 			<div class="mx-2 mt-2 mb-6 text-white bg-blue-500 rounded-xl md:justify-self-end btn">
 				<button type="submit"> Send message </button>
 			</div>
+			<p class="text-blue-600">{status}</p>
 		</form>
 	</div>
 </section>
