@@ -55,11 +55,11 @@
 			</nav>
 		{/each}
 
-		<div class="relative hidden lg:block">
+		<div class="relative block">
 			<LightSwitch />
 		</div>
 
-		<section class="hidden lg:block px-5 space-x-1 sm:inline-flex">
+		<section class="px-5 space-x-1 sm:inline-flex">
 			<a
 				class="btn-icon hover:variant-soft-primary"
 				href="https://github.com/Samoa-Code-Hub"
