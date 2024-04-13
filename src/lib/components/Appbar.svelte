@@ -33,7 +33,11 @@
 				<IconMenu2 />
 			</button>
 			<!-- Logo -->
-			<a class="lg:!ml-0 w-[32px] lg:w-auto overflow-hidden" href="/" title="Go to Homepage">
+			<a
+				class="lg:!ml-0 w-[32px] hidden lg:block lg:w-auto overflow-hidden"
+				href="/"
+				title="Go to Homepage"
+			>
 				<IconHome />
 			</a>
 		</div>
@@ -55,7 +59,7 @@
 			<LightSwitch />
 		</div>
 
-		<section class="hidden px-5 space-x-1 sm:inline-flex">
+		<section class="hidden lg:block px-5 space-x-1 sm:inline-flex">
 			<a
 				class="btn-icon hover:variant-soft-primary"
 				href="https://github.com/Samoa-Code-Hub"
