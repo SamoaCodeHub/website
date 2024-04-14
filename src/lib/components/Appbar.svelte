@@ -1,7 +1,10 @@
 <script>
-	import { AppBar, LightSwitch } from '@skeletonlabs/skeleton';
+	import { AppBar, Avatar, LightSwitch } from '@skeletonlabs/skeleton';
 	import { IconBrandGithubFilled, IconHome, IconMenu2 } from '@tabler/icons-svelte';
 	import { menuItems } from '$lib/utils/';
+	import { scrollToTop } from '$lib/utils/helpers';
+
+	import logo from '../assets/sch-logo/SAMOACode_1.png';
 
 	export let toggleSidebar = false;
 
@@ -34,11 +37,11 @@
 			</button>
 			<!-- Logo -->
 			<a
-				class="lg:!ml-0 w-[32px] hidden lg:block lg:w-auto overflow-hidden"
 				href="/"
-				title="Go to Homepage"
+				class="lg:!ml-0 w-[32px] hidden lg:block lg:w-auto overflow-hidden"
+				on:click|preventDefault={scrollToTop}
 			>
-				<IconHome />
+				<Avatar src={logo} rounded="rounded" />
 			</a>
 		</div>
 	</svelte:fragment>
@@ -48,7 +51,7 @@
 				<a
 					href={item.ref}
 					class="btn hover:variant-soft-primary"
-					on:click|preventDefault={scrollIntoView}
+					on:click|preventDefault={scrollToTop}
 				>
 					{item.name}
 				</a>

@@ -1,16 +1,10 @@
 <script>
-	import { menuItems } from '$lib/utils/menuItems';
-	function scrollSmooth() {
-		const el = document.querySelector(menuItems[0].ref);
-		el.scrollIntoView({
-			behavior: 'smooth'
-		});
-	}
+	import { scrollToTop } from '$lib/utils/helpers';
 </script>
 
 <button
 	class="!fixed bottom-5 right-5 rounded-full bg-sky-600 dark:bg-sky-300 p-3 text-xs font-medium uppercase leading-tight dark:text-sky-950 text-white shadow-md transition duration-150 ease-in-out hover:bg-sky-950 hover:shadow-lg focus:bg-sky-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-sky-800 active:shadow-lg"
-	on:click={scrollSmooth}
+	on:click={scrollToTop}
 	id="bacToTop"
 >
 	<svg
