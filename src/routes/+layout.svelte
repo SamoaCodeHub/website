@@ -8,11 +8,13 @@
 	import Appbar from '$lib/components/Appbar.svelte';
 	import Sidebar from '$lib/components/Sidebar.svelte';
 	import BackToTop from '$lib/components/BackToTop.svelte';
+	import Analytics from '$lib/components/Analytics.svelte';
 
 	initializeStores();
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 
 	let visible = false;
+	let gaMesurementId = import.meta.env.VITE_GA_MEASUREMENT_ID;
 	function scrollHandler(event) {
 		visible = event.currentTarget.scrollTop > 150;
 	}
@@ -20,6 +22,13 @@
 	let toggleSidebar;
 </script>
 
+<svelte:head>
+	<title>Samoa Code Hub</title>
+</svelte:head>
+{#if gaMesurementId}
+	<script async src="https://www.googletagmanager.com/gtag/js?id={gaMesurementId}"></script>
+	<Analytics measurementId={gaMesurementId} />
+{/if}
 <!-- App Shell -->
 <AppShell on:scroll={scrollHandler}>
 	<svelte:fragment slot="header">

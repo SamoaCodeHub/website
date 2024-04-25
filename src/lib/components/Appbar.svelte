@@ -1,6 +1,6 @@
 <script>
 	import { AppBar, Avatar, LightSwitch } from '@skeletonlabs/skeleton';
-	import { IconBrandGithubFilled, IconHome, IconMenu2 } from '@tabler/icons-svelte';
+	import { IconBrandGithubFilled, IconMenu2 } from '@tabler/icons-svelte';
 	import { menuItems } from '$lib/utils/';
 	import { scrollToTop } from '$lib/utils/helpers';
 
@@ -51,7 +51,7 @@
 				<a
 					href={item.ref}
 					class="btn hover:variant-soft-primary"
-					on:click|preventDefault={scrollToTop}
+					on:click|preventDefault={scrollIntoView}
 				>
 					{item.name}
 				</a>

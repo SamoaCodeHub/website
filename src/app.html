@@ -9,14 +9,4 @@
 	<body data-sveltekit-preload-data="hover" data-theme="sso-custom-theme">
 		<div style="display: contents" class="h-full overflow-hidden">%sveltekit.body%</div>
 	</body>
-	{% if env.GA_MEASUREMENT_ID %}
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
-
-			gtag('config', '{{ env.GA_MEASUREMENT_ID }}');
-		</script>
-		<script async src="https://www.googletagmanager.com/gtag/js?id={{ env.GA_MEASUREMENT_ID }}"></script>
-	{% endif %}
 </html>
