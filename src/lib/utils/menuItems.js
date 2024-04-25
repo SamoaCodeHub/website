@@ -6,7 +6,7 @@ export const Section = {
 	Contributors: 'Contributors',
 	Contact: 'Contact',
 	About: 'About',
-	Projects: 'Projects',
+	Projects: 'Projects'
 };
 
 export const menuItems = [

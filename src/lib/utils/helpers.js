@@ -1,6 +1,6 @@
 export function scrollToTop() {
-    const el = document.querySelector("#Hero");
-    el.scrollIntoView({
-        behavior: 'smooth'
-    });
+	const el = document.querySelector('#Hero');
+	el.scrollIntoView({
+		behavior: 'smooth'
+	});
 }

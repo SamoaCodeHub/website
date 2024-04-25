@@ -7,8 +7,9 @@ test('Hero section has expected p', async ({ page }) => {
 	).toBeVisible();
 });
 
-
-test('Clicking "Projects" button navigates to projects page and displays Featured Projects h1', async ({ page }) => {
+test('Clicking "Projects" button navigates to projects page and displays Featured Projects h1', async ({
+	page
+}) => {
 	await page.goto('/');
 	await page.click('text=Projects');
 	await expect(page.locator('h1:has-text("Featured Projects")')).toBeVisible();
