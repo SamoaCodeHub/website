@@ -88,14 +88,14 @@
 			avatar: Ainsof,
 			name: "Ainsof So'o",
 			title: 'Systems Developer & Analyst',
-			github: 'https://github.com',
+			github: 'https://github.com/ainsofs',
 			linkedin: 'https://www.linkedin.com/in/ainsofs'
 		},
 		{
 			avatar: Hilton,
 			name: "Hilton So'o",
 			title: 'Managing Director',
-			github: 'https://github.com',
+			github: 'https://github.com/encode685',
 			linkedin: 'https://www.linkedin.com/in/hilton-samuelu-so-o-8711aa103'
 		}
 	];
