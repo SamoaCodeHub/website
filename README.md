@@ -21,8 +21,8 @@ The website for the Samoa Stack Overflow community, built with SvelteKit
 ### Clone the Repo
 
 ```sh
-git clone https://github.com/Samoa-Stack-Overflow/sso-website.git
-cd sso-website
+git clone https://github.com/SamoaCodeHub/website.git
+cd website
 ```
 
 ### Installing dependencies
