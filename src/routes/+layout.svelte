@@ -26,7 +26,6 @@
 	<title>Samoa Code Hub</title>
 </svelte:head>
 {#if gaMesurementId}
-	<script async src="https://www.googletagmanager.com/gtag/js?id={gaMesurementId}"></script>
 	<Analytics measurementId={gaMesurementId} />
 {/if}
 <!-- App Shell -->
