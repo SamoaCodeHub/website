@@ -14,7 +14,7 @@
 			<a
 				title="Dive into the code"
 				class="hidden btn btn-sm variant-ghost-surface sm:block"
-				href="https://github.com/Samoa-Stack-Overflow"
+				href="https://github.com/SamoaCodeHub"
 				target="_blank"
 			>
 				GitHub
@@ -22,7 +22,7 @@
 
 			<a
 				target="_blank"
-				href="https://github.com/Samoa-Stack-Overflow"
+				href="https://github.com/SamoCodeHub"
 				class="lg:!ml-0 w-[32px] lg:w-auto overflow-hidden block sm:hidden"
 			>
 				<IconBrandGithub />
