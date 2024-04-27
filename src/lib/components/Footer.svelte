@@ -22,7 +22,7 @@
 
 			<a
 				target="_blank"
-				href="https://github.com/SamoCodeHub"
+				href="https://github.com/SamoaCodeHub"
 				class="lg:!ml-0 w-[32px] lg:w-auto overflow-hidden block sm:hidden"
 			>
 				<IconBrandGithub />
