@@ -65,7 +65,7 @@
 		<section class="px-5 space-x-1 sm:inline-flex">
 			<a
 				class="btn-icon hover:variant-soft-primary"
-				href="https://github.com/Samoa-Code-Hub"
+				href="https://github.com/SamoaCodeHub"
 				target="_blank"
 				rel="noreferrer"
 			>
