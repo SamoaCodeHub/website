@@ -10,6 +10,7 @@
 	import Tausani from '../assets/images/tausani-profile.jpeg';
 	import Ainsof from '../assets/images/ainsof-profile.jpeg';
 	import Hilton from '../assets/images/hilton-profile.jpeg';
+	import Kendrick from '../assets/images/kendrick-profile.jpeg';
 	import { Section } from '$lib/utils';
 
 	const team = [
@@ -63,8 +64,7 @@
 			linkedin: 'https://www.linkedin.com/in/aaron-solofa-06b923123/'
 		},
 		{
-			avatar:
-				'https://img.freepik.com/free-vector/hacker-operating-laptop-cartoon-icon-illustration-technology-icon-concept-isolated-flat-cartoon-style_138676-2387.jpg?size=338&ext=jpg&ga=GA1.1.1448711260.1706918400&semt=ais',
+			avatar: Kendrick,
 			name: 'Kendrick Lui',
 			title: 'Web Developer',
 			github: 'https://github.com/Ken2523',
