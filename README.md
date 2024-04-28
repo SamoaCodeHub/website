@@ -1,6 +1,6 @@
-# Samoa Stack Overflow Website
+# Samoa Code Hub Website
 
-The website for the Samoa Stack Overflow community, built with SvelteKit
+The website for the Samoa Code Hub community, built with SvelteKit
 
 [![Contributors][contributors-shield]][contributors-url][![Stargazers][stars-shield]][stars-url][![Issues][issues-shield]][issues-url][![MIT License][license-shield]][license-url]
 
@@ -42,8 +42,6 @@ npm run dev -- --open
 
 ### Running Tests
 
-## e2e
-
 ```bash
 # Make sure you install playwright browsers
 npx playwright install
@@ -71,15 +69,41 @@ variable.
 
 Check out our [Contributions Guideline][contribution-url]
 
+## Environments
+
+### Local
+
+http://localhost:5173
+
+Platform: Local Machine
+
+Description: used for local development, creating new features and bug fixes.
+
+### Staging
+
+https://dev.samoacodehub.org
+
+Platform: Netlify
+
+Description: reflects the latest changes on the main branch. This ensures there is a working website with the most recent updates.
+
+### Production
+
+https://www.samoacodehub.org
+
+Platform: Vercel
+
+Description: the live Samoa Code Hub website. The website is deployed on production once a release tag is created.
+
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/Samoa-Stack-Overflow/sso-website.svg?style=for-the-badge
-[contributors-url]: https://github.com/Samoa-Stack-Overflow/sso-website/graphs/contributors
-[stars-shield]: https://img.shields.io/github/stars/Samoa-Stack-Overflow/sso-website.svg?style=for-the-badge
-[stars-url]: https://github.com/Samoa-Stack-Overflow/sso-website/stargazers
-[issues-shield]: https://img.shields.io/github/issues/Samoa-Stack-Overflow/sso-website.svg?style=for-the-badge
-[issues-url]: https://github.com/Samoa-Stack-Overflow/sso-website/issues
-[license-shield]: https://img.shields.io/github/license/Samoa-Stack-Overflow/sso-website.svg?style=for-the-badge
-[license-url]: https://github.com/Samoa-Stack-Overflow/sso-website/blob/main/LICENSE.txt
-[contribution-url]: https://github.com/Samoa-Stack-Overflow/sso-website/blob/main/CONTRIBUTING.md
+[contributors-shield]: https://img.shields.io/github/contributors/SamoaCodeHub/website.svg?style=for-the-badge
+[contributors-url]: https://github.com/SamoaCodeHub/website/graphs/contributors
+[stars-shield]: https://img.shields.io/github/stars/SamoaCodeHub/website.svg?style=for-the-badge
+[stars-url]: https://github.com/SamoaCodeHub/website/stargazers
+[issues-shield]: https://img.shields.io/github/issues/SamoaCodeHub/website.svg?style=for-the-badge
+[issues-url]: https://github.com/SamoaCodeHub/website/issues
+[license-shield]: https://img.shields.io/github/license/SamoaCodeHub/website.svg?style=for-the-badge
+[license-url]: https://github.com/SamoaCodeHub/website/blob/main/LICENSE.txt
+[contribution-url]: https://github.com/SamoaCodeHub/website/blob/main/CONTRIBUTING.md
