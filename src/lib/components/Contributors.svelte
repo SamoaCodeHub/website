@@ -17,7 +17,7 @@
 		{
 			avatar: Andre,
 			name: 'Andre Westerlund',
-			title: 'Senior Full Stack Developer',
+			title: 'Founder & Senior Full Stack Developer',
 			github: 'https://github.com/westerandr',
 			linkedin: 'https://www.linkedin.com/in/andrewesterlund/'
 		},
