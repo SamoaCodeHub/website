@@ -59,13 +59,13 @@
 			}
 			const response = await fetch(formSpree, {
 				method: 'POST',
-				body: {
+				body: JSON.stringify({
 					firstname,
 					lastname,
 					email,
 					phone,
 					message
-				},
+				}),
 				headers: {
 					Accept: 'application/json'
 				}
