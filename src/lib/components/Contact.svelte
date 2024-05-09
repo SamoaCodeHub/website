@@ -1,48 +1,89 @@
 <script>
 	import { Section } from '$lib/utils';
-	import { IconMailFilled, IconPhoneFilled, IconMapPinFilled } from '@tabler/icons-svelte';
-	import { dev } from '$app/environment';
+	import { getToastStore } from '@skeletonlabs/skeleton';
+	import { IconMailFilled, IconMapPinFilled } from '@tabler/icons-svelte';
 
-	const formSpree = import.meta.env.VITE_FORMSPREE;
+	const env = import.meta.env.VITE_ENV ?? 'development';
+	const formSpree = import.meta.env.VITE_FORMSPREE ?? '#';
+	const toast = getToastStore();
 
 	let firstname = '';
 	let lastname = '';
 	let email = '';
 	let phone = '';
 	let message = '';
-	let status = '';
 
-	async function handleSubmit(event) {
-		const data = new FormData(event.target);
-		if (dev) {
-			status = 'Thanks for your submission!';
+	function clearForm() {
+		firstname = '';
+		lastname = '';
+		email = '';
+		phone = '';
+		message = '';
+	}
+
+	function validateEmail(email) {
+		const re = /\S+@\S+\.\S+/;
+		return re.test(email);
+	}
+
+	function triggerToast(message, type = 'success') {
+		let background;
+		switch (type) {
+			case 'success':
+				background = 'variant-filled-success';
+				break;
+			case 'error':
+				background = 'variant-filled-error';
+				break;
+			default:
+				background = 'variant-filled-success';
+		}
+		const t = {
+			message,
+			background,
+			timeout: 2500
+		};
+		toast.trigger(t);
+	}
+
+	async function handleSubmit(_event) {
+		if (env === 'development') {
+			triggerToast('Thanks for your submission!', 'success');
+			clearForm();
 			return;
 		}
 		try {
-			const response = await fetch(event.target.action, {
+			if (!validateEmail(email)) {
+				triggerToast('Please enter a valid email address', 'error');
+				return;
+			}
+			const response = await fetch(formSpree, {
 				method: 'POST',
-				body: data,
+				body: {
+					firstname,
+					lastname,
+					email,
+					phone,
+					message
+				},
 				headers: {
 					Accept: 'application/json'
 				}
 			});
 			if (response.ok) {
-				status = 'Thanks for your submission!';
-				firstname = '';
-				lastname = '';
-				email = '';
-				phone = '';
-				message = '';
+				triggerToast('Thanks for your submission!', 'success');
+				clearForm();
 			} else {
 				const data = await response.json();
 				if (Object.hasOwn(data, 'errors')) {
-					status = data['errors'].map((error) => error['message']).join(', ');
+					const errorMessages = data['errors'].map((error) => error['message']).join(', ');
+					triggerToast(errorMessages, 'error');
 				} else {
-					status = 'Oops! There was a problem submitting your form';
+					triggerToast('Oops! There was a problem submitting your form', 'error');
 				}
 			}
 		} catch (error) {
-			status = 'Oops! There was a problem submitting your form';
+			triggerToast('Oops! There was a problem submitting your form', 'error');
 		}
 	}
 </script>
@@ -55,16 +96,12 @@
 	<div
 		class="w-auto gap-4 mx-auto border-transparent rounded-md sm:p-1 lg:w-3/5 opacity-95 bg-slate-100 md:flex md:grid-cols-2"
 	>
-		<div class="p-6 text-white rounded-t-md sm:rounded-md bg-surface-600 lg:w-1/3">
+		<div class="p-6 text-white rounded-t-md text-wrap sm:rounded-md bg-surface-600 lg:w-1/3">
 			<header class="font-medium card-header h3">Contact Information</header>
 			<section class="grid gap-5 mt-8 lg:mt-10 lg:gap-10">
 				<div class="flex gap-5">
-					<IconPhoneFilled />
-					<span>+685 1234567</span>
-				</div>
-				<div class="flex gap-5">
 					<IconMailFilled />
-					<span>admin@sch.com</span>
+					<span class="break-normal">samoastackoverflow@gmail.com</span>
 				</div>
 				<div class="flex gap-5">
 					<IconMapPinFilled />
@@ -143,7 +180,6 @@
 			<div class="mx-2 mt-2 mb-6 text-white bg-blue-500 rounded-xl md:justify-self-end btn">
 				<button type="submit"> Send message </button>
 			</div>
-			<p class="text-blue-600">{status}</p>
 		</form>
 	</div>
 </section>

@@ -1,6 +1,6 @@
 <script>
 	import '../app.postcss';
-	import { AppShell } from '@skeletonlabs/skeleton';
+	import { AppShell, Toast } from '@skeletonlabs/skeleton';
 	import Footer from '$lib/components/Footer.svelte';
 
 	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom';
@@ -36,6 +36,7 @@
 	</svelte:fragment>
 	<svelte:fragment slot="sidebarLeft">
 		<Sidebar bind:toggleSidebar />
+		<Toast />
 	</svelte:fragment>
 	<!-- Page Route Content -->
 	<slot />
