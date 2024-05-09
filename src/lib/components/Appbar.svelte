@@ -36,8 +36,14 @@
 				<IconMenu2 />
 			</button>
 			<!-- Logo -->
-			<a href="/" class="block w-100" on:click|preventDefault={scrollToTop}>
-				<Avatar class="block w-10 h-10 lg:w-16 lg:h-16" src={logo} rounded="rounded" />
+			<a
+				href="/"
+				on:click|preventDefault={() => {
+					if (toggleSidebar) toggleSidebar = false;
+					scrollToTop();
+				}}
+			>
+				<Avatar class="block w-8 h-8 lg:w-16 lg:h-16" src={logo} rounded="rounded" />
 			</a>
 		</div>
 	</svelte:fragment>
