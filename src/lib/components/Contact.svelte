@@ -101,7 +101,7 @@
 			<section class="grid gap-5 mt-8 lg:mt-10 lg:gap-10">
 				<div class="flex gap-5">
 					<IconMailFilled />
-					<span class="break-normal">samoastackoverflow@gmail.com</span>
+					<span class="sch-email">samoastackoverflow@gmail.com</span>
 				</div>
 				<div class="flex gap-5">
 					<IconMapPinFilled />
@@ -183,3 +183,9 @@
 		</form>
 	</div>
 </section>
+
+<style>
+	.sch-email {
+		word-break: break-word;
+	}
+</style>
