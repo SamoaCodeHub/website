@@ -36,12 +36,8 @@
 				<IconMenu2 />
 			</button>
 			<!-- Logo -->
-			<a
-				href="/"
-				class="lg:!ml-0 w-[32px] hidden lg:block lg:w-auto overflow-hidden"
-				on:click|preventDefault={scrollToTop}
-			>
-				<Avatar src={logo} rounded="rounded" />
+			<a href="/" class="block w-100" on:click|preventDefault={scrollToTop}>
+				<Avatar class="block w-10 h-10 lg:w-16 lg:h-16" src={logo} rounded="rounded" />
 			</a>
 		</div>
 	</svelte:fragment>
