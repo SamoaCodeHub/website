@@ -19,7 +19,7 @@
 		visible = event.currentTarget.scrollTop > 150;
 	}
 
-	let toggleSidebar;
+	let toggleSidebar = false;
 </script>
 
 <svelte:head>
