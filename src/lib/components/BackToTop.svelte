@@ -1,5 +1,5 @@
 <script>
-	import { scrollToTop } from '$lib/utils/helpers';
+	import { scrollToTop } from '$lib/utils/';
 </script>
 
 <button

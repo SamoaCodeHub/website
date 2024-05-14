@@ -2,7 +2,7 @@
 	import { AppBar, Avatar, LightSwitch } from '@skeletonlabs/skeleton';
 	import { IconBrandGithubFilled, IconMenu2 } from '@tabler/icons-svelte';
 	import { menuItems } from '$lib/utils/';
-	import { scrollToTop } from '$lib/utils/helpers';
+	import { scrollToTop } from '$lib/utils/';
 
 	import logo from '../assets/sch-logo/SAMOACode_1.png';
 
