@@ -32,9 +32,9 @@
 		},
 		{
 			title: 'Launched SCH Website',
-			time: 'March 2024',
+			time: 'May 2024',
 			description:
-				'Unveiled the official SCH Website, streamlining user access and enhacing information sharing within',
+				'Unveiled the official SCH Website, streamlining user access and enhancing information sharing within',
 			url: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
 		}
 	];
