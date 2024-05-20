@@ -5,6 +5,7 @@
 
 	const env = import.meta.env.VITE_ENV ?? 'development';
 	const formSpree = import.meta.env.VITE_FORMSPREE ?? '#';
+	const recaptchaSiteKey = import.meta.env.RECAPTCHA_SITE_KEY;
 	const toast = getToastStore();
 
 	let firstname = '';
@@ -88,6 +89,11 @@
 	}
 </script>
 
+<svelte:head>
+	{#if env === 'production'}
+		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+	{/if}
+</svelte:head>
 <section id={Section.Contact} class="px-3 py-5 rounded-none lg:py-10 lg:px-5 card bg-surface-400">
 	<div class="grid justify-center gap-4 p-10">
 		<h1 class="font-bold text-center h1">Contact Us</h1>
@@ -177,6 +183,9 @@
 					required
 				/>
 			</label>
+			{#if recaptchaSiteKey && env === 'production'}
+				<div class="g-recaptcha" data-sitekey={recaptchaSiteKey}></div>
+			{/if}
 			<div class="mx-2 mt-2 mb-6 text-white bg-blue-500 rounded-xl md:justify-self-end btn">
 				<button type="submit"> Send message </button>
 			</div>
