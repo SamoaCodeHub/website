@@ -5,7 +5,7 @@
 
 	const env = import.meta.env.VITE_ENV ?? 'development';
 	const formSpree = import.meta.env.VITE_FORMSPREE ?? '#';
-	const recaptchaSiteKey = import.meta.env.RECAPTCHA_SITE_KEY;
+	const recaptchaSiteKey = import.meta.env.VITE_RECAPTCHA_SITE_KEY;
 	const toast = getToastStore();
 
 	let firstname = '';
@@ -183,7 +183,7 @@
 					required
 				/>
 			</label>
-			{#if recaptchaSiteKey && env === 'production'}
+			{#if recaptchaSiteKey && env !== 'development'}
 				<div class="g-recaptcha" data-sitekey={recaptchaSiteKey}></div>
 			{/if}
 			<div class="mx-2 mt-2 mb-6 text-white bg-blue-500 rounded-xl md:justify-self-end btn">
@@ -196,5 +196,8 @@
 <style>
 	.sch-email {
 		word-break: break-word;
+	}
+	.g-recaptcha {
+		padding-left: 0.75rem;
 	}
 </style>
