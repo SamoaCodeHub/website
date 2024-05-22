@@ -58,6 +58,13 @@
 				triggerToast('Please enter a valid email address', 'error');
 				return;
 			}
+			window.grecaptcha = window.grecaptcha || {};
+
+			const recaptchaResponse = window.document.getElementById('recaptchaResponse').value;
+			if (!recaptchaResponse) {
+				triggerToast('Please complete the ReCAPTCHA', 'error');
+				return;
+			}
 			const response = await fetch(formSpree, {
 				method: 'POST',
 				body: JSON.stringify({
@@ -65,7 +72,8 @@
 					lastname,
 					email,
 					phone,
-					message
+					message,
+					'g-recaptcha-response': recaptchaResponse
 				}),
 				headers: {
 					Accept: 'application/json'
@@ -85,13 +93,22 @@
 			}
 		} catch (error) {
 			triggerToast('Oops! There was a problem submitting your form', 'error');
+		} finally {
+			if (window.grecaptcha) {
+				window.grecaptcha.reset();
+			}
 		}
 	}
 </script>
 
 <svelte:head>
-	{#if env !== 'development'}
-		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+	{#if recaptchaSiteKey && env !== 'development'}
+		<script src="https://www.google.com/recaptcha/api.js"></script>
+		<script>
+			function recaptchaCallback(token) {
+				window.document.getElementById('recaptchaResponse').value = token;
+			}
+		</script>
 	{/if}
 </svelte:head>
 <section id={Section.Contact} class="px-3 py-5 rounded-none lg:py-10 lg:px-5 card bg-surface-400">
@@ -184,7 +201,12 @@
 				/>
 			</label>
 			{#if recaptchaSiteKey && env !== 'development'}
-				<div class="g-recaptcha" data-sitekey={recaptchaSiteKey}></div>
+				<div
+					class="g-recaptcha"
+					data-sitekey={recaptchaSiteKey}
+					data-callback="recaptchaCallback"
+				></div>
+				<input id="recaptchaResponse" name="recaptchaResponse" type="hidden" />
 			{/if}
 			<div class="mx-2 mt-2 mb-6 text-white bg-blue-500 rounded-xl md:justify-self-end btn">
 				<button type="submit"> Send message </button>
