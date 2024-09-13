@@ -6,12 +6,12 @@
 </script>
 
 <div
-	class={`w-full lg:hidden focus:shadow-outline z-20 variant-filled-surface
+	class={`pr-12 lg:hidden focus:shadow-outline z-20 variant-filled-surface
   space-y-6 ${toggleSidebar ? '' : '-translate-x-full'} mt-16 pt-5 px-2 absolute overflow-hidden
 	inset-y-0 left-0 transform transition delay-200 duration-700 ease-in-out`}
 >
 	<!-- nav -->
-	<div class="btn-group-vertical w-full">
+	<div class="btn-group-vertical">
 		{#each menuItems as item}
 			<button
 				on:click={() => {

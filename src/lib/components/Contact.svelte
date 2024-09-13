@@ -99,6 +99,19 @@
 			}
 		}
 	}
+
+	//copy-to-clipboard function for email adress
+	function copyEmailToClipboard() {
+		const email = document.querySelector('.sch-email').textContent;
+		navigator.clipboard
+			.writeText(email)
+			.then(() => {
+				triggerToast('Email copied to clipboard!', 'success');
+			})
+			.catch((error) => {
+				triggerToast('Error copying email to clipboard', 'error');
+			});
+	}
 </script>
 
 <svelte:head>
@@ -111,25 +124,32 @@
 		</script>
 	{/if}
 </svelte:head>
-<section id={Section.Contact} class="px-3 py-5 rounded-none lg:py-10 lg:px-5 card bg-surface-400">
+<section id={Section.Contact} class="px-3 py-5 rounded-none lg:py-10 lg:px-5">
 	<div class="grid justify-center gap-4 p-10">
 		<h1 class="font-bold text-center h1">Contact Us</h1>
-		<h3>Any questions or remarks? Just write us a message!</h3>
+		<h3 class="text-[#5d5c5c] dark:text-[#cecece]">
+			Any questions or remarks? Just write us a message!
+		</h3>
 	</div>
 	<div
-		class="w-auto gap-4 mx-auto border-transparent rounded-md sm:p-1 lg:w-3/5 opacity-95 bg-slate-100 md:flex md:grid-cols-2"
+		class="p-0 w-auto gap-4 mx-auto border-transparent rounded-md lg:w-3/5 opacity-95 bg-slate-100 md:flex md:grid-cols-2"
 	>
 		<div class="p-6 text-white rounded-t-md text-wrap sm:rounded-md bg-surface-600 lg:w-1/3">
-			<header class="font-medium card-header h3">Contact Information</header>
-			<section class="grid gap-5 mt-8 lg:mt-10 lg:gap-10">
-				<div class="flex gap-5">
+			<header class="font-medium card-header h3 p-0">Contact Information</header>
+			<section class="grid gap-5 mt-8 lg:mt-10 lg:gap-7">
+				<div class="flex items-start justify-start gap-3">
 					<IconMailFilled />
-					<span class="sch-email">samoastackoverflow@gmail.com</span>
+					<abbr title="click to copy">
+						<button class="sch-email" on:click={() => copyEmailToClipboard()}>
+							samoastackoverflow@gmail.com
+						</button>
+					</abbr>
 				</div>
-				<div class="flex gap-5">
+				<div class="flex items-start justify-start gap-3">
 					<IconMapPinFilled />
 					<span>Apia, Samoa</span>
 				</div>
+				<div></div>
 			</section>
 		</div>
 		<form
@@ -189,7 +209,7 @@
 					/>
 				</label>
 			</div>
-			<label class="p-3 text-sm text-black lg:mt-4 label">
+			<label class="p-5 text-sm text-black lg:mt-4 label">
 				<span>Message</span>
 				<textarea
 					class="text-sm textarea variant-form-material"
@@ -208,9 +228,12 @@
 				></div>
 				<input id="recaptchaResponse" name="recaptchaResponse" type="hidden" />
 			{/if}
-			<div class="mx-2 mt-2 mb-6 text-white bg-blue-500 rounded-xl md:justify-self-end btn">
-				<button type="submit"> Send message </button>
-			</div>
+			<button
+				type="submit"
+				class="mx-2 mt-2 mb-6 px-12 text-white bg-blue-500 rounded-xl md:justify-self-center btn"
+			>
+				Send message
+			</button>
 		</form>
 	</div>
 </section>
@@ -218,8 +241,26 @@
 <style>
 	.sch-email {
 		word-break: break-word;
+		text-align: start;
+		cursor: pointer;
 	}
+
 	.g-recaptcha {
 		padding-left: 0.75rem;
+	}
+
+	textarea {
+		resize: none;
+	}
+
+	.rounded-t-md {
+		border-top-left-radius: 0.375rem;
+		border-top-right-radius: 0rem;
+		border-bottom-right-radius: 0rem;
+
+		@media (max-width: 768px) {
+			border-top-right-radius: 0.375rem;
+			border-bottom-left-radius: 0rem;
+		}
 	}
 </style>

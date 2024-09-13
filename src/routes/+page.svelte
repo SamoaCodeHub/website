@@ -10,6 +10,6 @@
 <Hero />
 <About />
 <Projects />
-<Media />
 <Contributors />
+<Media />
 <Contact />
