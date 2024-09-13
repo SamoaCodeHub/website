@@ -4,16 +4,16 @@
 </script>
 
 <AppBar
-	gridColumns="grid grid-cols-1 sm:grid-cols-3"
-	slotLead="sm:place-self-start place-self-center"
+	gridColumns="grid grid-cols-1 sm:grid-cols-1"
+	slotLead="sm:place-self-center place-self-center"
 	shadow="shadow-2xl"
-	slotTrail="sm:place-self-end place-self-center !space-x-2 flex text-sm md:text-base"
+	slotTrail="sm:place-self-center place-self-center !space-x-2 flex text-sm md:text-base pb-4"
 >
 	<svelte:fragment slot="lead">
-		<div class="flex items-center space-x-4">
+		<div class="flex items-center space-x-4 mt-4">
 			<a
 				title="Dive into the code"
-				class="hidden btn btn-sm variant-ghost-surface sm:block"
+				class="hidden btn btn-sm sm:block"
 				href="https://github.com/SamoaCodeHub"
 				target="_blank"
 			>
@@ -30,7 +30,7 @@
 			&nbsp;&nbsp;
 			<a
 				title="Join us on Discord"
-				class="hidden btn btn-sm variant-ghost-surface sm:block"
+				class="hidden btn btn-sm sm:block"
 				href="https://forms.gle/aoTeV9jF5h7wnqAG6"
 				target="_blank"
 			>
@@ -47,7 +47,7 @@
 			&nbsp;&nbsp;
 			<a
 				title="Get the latest on Facebook"
-				class="hidden btn btn-sm variant-ghost-surface sm:block"
+				class="hidden btn btn-sm sm:block"
 				href="https://www.facebook.com/groups/948415479224570"
 				target="_blank"
 			>
@@ -67,3 +67,9 @@
 		Copyright © {new Date().getFullYear()} Samoa Code Hub. All Rights Reserved.
 	</svelte:fragment>
 </AppBar>
+
+<style>
+	a {
+		text-decoration: underline;
+	}
+</style>

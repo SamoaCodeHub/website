@@ -25,7 +25,7 @@
 	}
 </script>
 
-<AppBar shadow="shadow-2xl" slotTrail="!space-x-2">
+<AppBar shadow="shadow-lg" slotTrail="!space-x-2">
 	<svelte:fragment slot="lead">
 		<div class="flex items-center space-x-4">
 			<!-- Hamburger Menu -->
