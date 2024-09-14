@@ -64,7 +64,7 @@
 			<LightSwitch />
 		</div>
 
-		<section class="px-5 space-x-1 sm:inline-flex">
+		<section class="px-5 space-x-1">
 			<a
 				class="btn-icon hover:variant-soft-primary"
 				href="https://github.com/SamoaCodeHub"
@@ -72,7 +72,6 @@
 				rel="noreferrer"
 			>
 				<IconBrandGithubFilled />
-				<i class="text-lg fa-brands fa-github" />
 			</a>
 		</section>
 	</svelte:fragment>
