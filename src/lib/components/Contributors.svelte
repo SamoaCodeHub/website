@@ -12,6 +12,7 @@
 	import Hilton from '../assets/images/hilton-profile.jpeg';
 	import Kendrick from '../assets/images/kendrick-profile.jpeg';
 	import { Section } from '$lib/utils';
+	import emblaCarouselSvelte from 'embla-carousel-svelte';
 
 	const team = [
 		{
@@ -135,6 +136,35 @@
 			</div>
 		{/each}
 	</div>
+	<div class="embla" use:emblaCarouselSvelte>
+		<div class="embla__container">
+			{#each team as { avatar, name, title, github, linkedin }}
+				<div
+					class="embla__slide flex flex-col items-center justify-center w-full mx-auto mt-5 card card-hover sm:w-80 sm:h-80"
+				>
+					<img class="w-40 h-40 rounded-full" src={avatar} loading="lazy" alt="Avatar" />
+					<h5 class="pt-5 text-xl font-semibold">{name}</h5>
+					<span class="pt-2 text-sm text-wrap text-[#5d5c5c] dark:text-[#cecece]">{title}</span>
+					<div class="flex flex-row pt-6 icon-container">
+						<a
+							href={linkedin}
+							target="_blank"
+							class="rounded bg-blue-500 hover:bg-blue-600 text-white"
+						>
+							LinkedIn
+						</a>
+						<a
+							href={github}
+							target="_blank"
+							class="rounded bg-[#949494] hover:bg-[#818181] text-white"
+						>
+							Github
+						</a>
+					</div>
+				</div>
+			{/each}
+		</div>
+	</div>
 </section>
 
 <style>
@@ -155,5 +185,16 @@
 		transition: all 0.2s;
 		height: 100%;
 		padding-block: 1rem;
+	}
+
+	.embla {
+		overflow: hidden;
+	}
+	.embla__container {
+		display: flex;
+	}
+	.embla__slide {
+		flex: 0 0 100%;
+		min-width: 0;
 	}
 </style>
