@@ -136,11 +136,12 @@
 			</div>
 		{/each}
 	</div>
+	<p class="sm:visible mx-auto text-[#5d5c5c] dark:text-[#cecece] text-[14px]">please swipe</p>
 	<div class="embla" use:emblaCarouselSvelte>
 		<div class="embla__container">
 			{#each team as { avatar, name, title, github, linkedin }}
 				<div
-					class="embla__slide flex flex-col items-center justify-center w-full mx-auto mt-5 card card-hover sm:w-80 sm:h-80"
+					class="embla__slide flex flex-col items-center justify-center w-full mx-auto mt-5 card sm:w-80 sm:h-80"
 				>
 					<img class="w-40 h-40 rounded-full" src={avatar} loading="lazy" alt="Avatar" />
 					<h5 class="pt-5 text-xl font-semibold">{name}</h5>
@@ -168,6 +169,11 @@
 </section>
 
 <style>
+	.container {
+		@media (max-width: 450px) {
+			margin-block: 4rem;
+		}
+	}
 	.icon-container {
 		flex-direction: column;
 		gap: 0.7rem;
@@ -187,14 +193,32 @@
 		padding-block: 1rem;
 	}
 
+	.grid {
+		@media (max-width: 450px) {
+			display: none;
+		}
+	}
+
 	.embla {
 		overflow: hidden;
+		display: none;
+
+		@media (max-width: 450px) {
+			display: block;
+		}
 	}
+
 	.embla__container {
 		display: flex;
+		gap: 2rem;
 	}
+
 	.embla__slide {
 		flex: 0 0 100%;
 		min-width: 0;
+	}
+
+	p {
+		max-width: max-content;
 	}
 </style>
