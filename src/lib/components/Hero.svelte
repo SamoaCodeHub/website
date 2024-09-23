@@ -5,7 +5,7 @@
 <section id={Section.Hero} class="py-8 text-black md:py-24 dark:text-white">
 	<div class="max-w-screen-xl px-3 mx-auto md:px-10">
 		<div class="flex flex-col items-center space-x-0 xl:flex-row">
-			<div class="flex flex-col w-full xl:w-2/3 hello">
+			<div class="flex flex-col items-center w-full xl:w-2/3">
 				<div class="flex flex-col space-y-4">
 					<h1
 						class="text-5xl font-bold text-center sm:text-6xl md:text-7xl font-heading xl:text-left mb-2"
@@ -27,7 +27,7 @@
 				<div
 					class="mt-10 w-[80%] lg:w-[100%] mx-auto xl:mx-0 lg:max-w-[600px] flex sm:flex-row flex-col items-center sm:gap-8 gap-4"
 				>
-					<div class="fuck flex-1 w-full sm:w-auto">
+					<div class="flex flex-1 justify-start pl-10 w-full sm:w-auto button-wrapper">
 						<p class="sr-only">
 							Press Join us Now to find out more about becoming a Samoa Code Hub Member
 						</p>
@@ -75,15 +75,7 @@
 		}
 	}
 
-	.hello {
-		align-items: center;
-	}
-
-	.fuck {
-		display: flex;
-		justify-content: left;
-		padding-left: 2.5rem;
-
+	.button-wrapper {
 		@media (max-width: 1282px) {
 			justify-content: center;
 		}
