@@ -27,11 +27,8 @@
 				<div
 					class="mt-10 w-[80%] lg:w-[100%] mx-auto xl:mx-0 lg:max-w-[600px] flex sm:flex-row flex-col items-center sm:gap-8 gap-4"
 				>
-<<<<<<< HEAD
-					
-=======
 					<div class="button-wrapper flex justify-start pl-10 flex-1 w-full sm:w-auto">
->>>>>>> b7e16a2 (made requested changes for pr)
+
 						<p class="sr-only">
 							Press Join us Now to find out more about becoming a Samoa Code Hub Member
 						</p>
