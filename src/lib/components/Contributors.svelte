@@ -11,6 +11,7 @@
 	import Ainsof from '../assets/images/ainsof-profile.jpeg';
 	import Hilton from '../assets/images/hilton-profile.jpeg';
 	import Kendrick from '../assets/images/kendrick-profile.jpeg';
+	import Henry from '../assets/images/henry-profile.jpg';
 	import { Section } from '$lib/utils';
 	import emblaCarouselSvelte from 'embla-carousel-svelte';
 
@@ -98,6 +99,13 @@
 			title: 'Managing Director',
 			github: 'https://github.com/encode685',
 			linkedin: 'https://www.linkedin.com/in/hilton-samuelu-so-o-8711aa103'
+		},
+		{
+			avatar: Henry,
+			name: 'Henry Fuerst',
+			title: 'Frontend Developer',
+			github: 'https://github.com/5thAttemptCode',
+			linkedin: 'https://www.linkedin.com/in/henry-fuerst-10b58a187/'
 		}
 	];
 </script>
@@ -114,7 +122,7 @@
 			<div
 				class="flex flex-col items-center justify-center w-full mx-auto mt-5 card card-hover sm:w-80 sm:h-80"
 			>
-				<img class="w-40 h-40 rounded-full" src={avatar} loading="lazy" alt="Avatar" />
+				<img class="w-40 h-40 rounded-full object-cover" src={avatar} loading="lazy" alt="Avatar" />
 				<h5 class="pt-5 text-xl font-semibold">{name}</h5>
 				<span class="pt-2 text-sm text-wrap text-[#5d5c5c] dark:text-[#cecece]">{title}</span>
 				<div class="flex flex-row pt-6 icon-container">
@@ -143,7 +151,12 @@
 				<div
 					class="embla__slide flex flex-col items-center justify-center w-full mx-auto mt-5 card sm:w-80 sm:h-80"
 				>
-					<img class="w-40 h-40 rounded-full" src={avatar} loading="lazy" alt="Avatar" />
+					<img
+						class="w-40 h-40 rounded-full object-cover"
+						src={avatar}
+						loading="lazy"
+						alt="Avatar"
+					/>
 					<h5 class="pt-5 text-xl font-semibold">{name}</h5>
 					<span class="pt-2 text-sm text-wrap text-[#5d5c5c] dark:text-[#cecece]">{title}</span>
 					<div class="flex flex-row pt-6 icon-container">
