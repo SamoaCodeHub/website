@@ -144,7 +144,9 @@
 			</div>
 		{/each}
 	</div>
-	<p class="sm:visible mx-auto text-[#5d5c5c] dark:text-[#cecece] text-[14px]">please swipe</p>
+	<p class="lg:hidden mx-auto text-[#5d5c5c] dark:text-[#cecece] text-[14px] swipe-p">
+		please swipe
+	</p>
 	<div class="embla" use:emblaCarouselSvelte>
 		<div class="embla__container">
 			{#each team as { avatar, name, title, github, linkedin }}
@@ -233,5 +235,13 @@
 
 	p {
 		max-width: max-content;
+	}
+
+	.swipe-p {
+		display: none;
+		@media (max-width: 450px) {
+			display: block;
+			font-size: 14px;
+		}
 	}
 </style>
