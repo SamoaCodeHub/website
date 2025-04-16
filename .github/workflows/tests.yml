@@ -14,8 +14,8 @@ concurrency:
 
 jobs:
   e2e:
-    timeout-minutes: 5
-    runs-on: ubuntu-20.04
+    timeout-minutes: 10
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
@@ -23,12 +23,19 @@ jobs:
           node-version: 18
       - name: Install missing dependencies
         run: |
-          sudo apt-get update
-          sudo apt-get install -y libasound2 libffi-dev libx264-dev
+            sudo apt-get update
+            sudo apt-get install -y libasound2 libasound2-plugins libatk1.0-0 libatk-bridge2.0-0 \
+              libc6 libcairo2 libcups2 libdbus-1-3 libexpat1 libfontconfig1 \
+              libgbm1 libgcc1 libglib2.0-0 libgtk-3-0 libnspr4 libnss3 \
+              libpango-1.0-0 libpangocairo-1.0-0 libstdc++6 libx11-6 libx11-xcb1 \
+              libxcb1 libxcomposite1 libxcursor1 libxdamage1 libxext6 libxfixes3 libxi6 \
+              libxrandr2 libxrender1 libxss1 libxtst6 libx264-dev libffmpeg-nvenc-dev
       - name: Install dependencies
         run: npm ci
       - name: Install Playwright Browsers
-        run: npx playwright install --with-deps
+        run: npx playwright install
+      - name: Install Playwright Dependencies
+        run: npx playwright install-deps
       - name: Run Playwright tests
         run: npx playwright test
         env:
