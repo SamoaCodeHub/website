@@ -48,7 +48,7 @@
 			<a
 				title="Get the latest on Facebook"
 				class="hidden btn btn-sm sm:block"
-				href="https://www.facebook.com/groups/948415479224570"
+				href="https://www.facebook.com/samoacodehub"
 				target="_blank"
 			>
 				Facebook
@@ -56,7 +56,7 @@
 
 			<a
 				target="_blank"
-				href="https://www.facebook.com/groups/948415479224570"
+				href="https://www.facebook.com/samoacodehub"
 				class="lg:!ml-0 w-[32px] lg:w-auto overflow-hidden block sm:hidden"
 			>
 				<IconBrandFacebook />
