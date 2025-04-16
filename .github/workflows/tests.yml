@@ -15,7 +15,7 @@ concurrency:
 jobs:
   e2e:
     timeout-minutes: 5
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
