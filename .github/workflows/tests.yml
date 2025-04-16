@@ -32,7 +32,7 @@ jobs:
         run: npx playwright test
         env:
           VITE_PB_URL: ${{ secrets.PB_URL }}
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: playwright-report
