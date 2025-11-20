@@ -1,33 +1,26 @@
-import { IconHome2, IconNews, IconMail, IconCode, IconUsers } from '@tabler/icons-svelte';
-
 export const Section = {
 	Hero: 'Hero',
-	Media: 'Media',
+	Projects: 'Projects',
 	Contributors: 'Contributors',
-	Contact: 'Contact',
 	About: 'About',
-	Projects: 'Projects'
+	Contact: 'Contact'
 };
 
 export const menuItems = [
 	{
 		ref: `#${Section.Projects}`,
-		name: 'Projects',
-		icon: IconUsers
+		name: 'Projects'
 	},
 	{
 		ref: `#${Section.About}`,
-		name: 'About Us',
-		icon: IconCode
+		name: 'About Us'
 	},
 	{
 		ref: `#${Section.Contributors}`,
-		name: 'The Team',
-		icon: IconCode
+		name: 'The Team'
 	},
 	{
 		ref: `#${Section.Contact}`,
-		name: 'Contact Us',
-		icon: IconMail
+		name: 'Contact Us'
 	}
 ];
