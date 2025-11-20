@@ -90,7 +90,7 @@ export const ssoCustomTheme = {
 		'--color-surface-200': '203 225 240', // #cbe1f0
 		'--color-surface-300': '172 206 231', // #accee7
 		'--color-surface-400': '110 170 213', // #6eaad5
-		'--color-surface-500': '48 133 195', // #3085c3
+		'--color-surface-500': '255 255 255', // #3085c3
 		'--color-surface-600': '43 120 176', // #2b78b0
 		'--color-surface-700': '36 100 146', // #246492
 		'--color-surface-800': '29 80 117', // #1d5075

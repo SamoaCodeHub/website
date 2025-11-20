@@ -11,24 +11,19 @@ export const Section = {
 
 export const menuItems = [
 	{
-		ref: `#${Section.About}`,
-		name: 'About',
-		icon: IconCode
-	},
-	{
 		ref: `#${Section.Projects}`,
 		name: 'Projects',
 		icon: IconUsers
 	},
 	{
-		ref: `#${Section.Contributors}`,
-		name: 'Contributors',
-		icon: IconUsers
+		ref: `#${Section.About}`,
+		name: 'About Us',
+		icon: IconCode
 	},
 	{
-		ref: `#${Section.Media}`,
-		name: 'Media',
-		icon: IconNews
+		ref: `#${Section.Contributors}`,
+		name: 'The Team',
+		icon: IconCode
 	},
 	{
 		ref: `#${Section.Contact}`,

@@ -7,7 +7,6 @@
 	import { storePopup, initializeStores } from '@skeletonlabs/skeleton';
 	import Appbar from '$lib/components/Appbar.svelte';
 	import Sidebar from '$lib/components/Sidebar.svelte';
-	import BackToTop from '$lib/components/BackToTop.svelte';
 	import Analytics from '$lib/components/Analytics.svelte';
 
 	initializeStores();
@@ -18,8 +17,6 @@
 	function scrollHandler(event) {
 		visible = event.currentTarget.scrollTop > 150;
 	}
-
-	let toggleSidebar = false;
 </script>
 
 <svelte:head>
@@ -32,10 +29,10 @@
 <AppShell on:scroll={scrollHandler}>
 	<svelte:fragment slot="header">
 		<!-- App Bar -->
-		<Appbar bind:toggleSidebar />
+		<Appbar />
 	</svelte:fragment>
 	<svelte:fragment slot="sidebarLeft">
-		<Sidebar bind:toggleSidebar />
+		<Sidebar />
 		<Toast />
 	</svelte:fragment>
 	<!-- Page Route Content -->
@@ -44,6 +41,3 @@
 		<Footer />
 	</svelte:fragment>
 </AppShell>
-{#if visible}
-	<BackToTop />
-{/if}
