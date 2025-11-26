@@ -5,7 +5,7 @@ test('Hero section has expected heading', async ({ page }) => {
 	await page.goto('/');
 	await expect(
 		page.getByRole('heading', {
-			name: 'The developer network built for progress.',
+			name: 'The developer network built for progress',
 			level: 1
 		})
 	).toBeVisible();
