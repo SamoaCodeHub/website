@@ -20,6 +20,8 @@
 
 <style>
 	.embla::after {
+		content: '';
+		position: absolute;
 		height: 100%;
 		width: 3rem;
 		top: 0;
@@ -28,6 +30,8 @@
 	}
 
 	.embla::before {
+		content: '';
+		position: absolute;
 		height: 100%;
 		width: 3rem;
 		top: 0;

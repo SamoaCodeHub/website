@@ -23,7 +23,7 @@ export const socialItems = [
 		name: 'Discord',
 		link: 'https://docs.google.com/forms/d/e/1FAIpQLSckLWtZky5-jGFWi4HnzuCQC3F1af3-LaCYhRrU5NCK36HJ4g/viewform',
 		icon: IconBrandDiscord,
-		title: 'Join us on Discord'
+		title: 'Sign up to join our Discord'
 	},
 	{
 		name: 'Facebook',

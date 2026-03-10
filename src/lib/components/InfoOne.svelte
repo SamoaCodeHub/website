@@ -1,6 +1,3 @@
-<script>
-</script>
-
 <div class="py-[clamp(3.125rem,8.3vw,7.5rem)]">
 	<div class="flex gap-[3rem] max-[768px]:flex-col">
 		<!-- Left box -->

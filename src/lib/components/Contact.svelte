@@ -166,7 +166,7 @@
 					</span>
 					<p>Apia, Samoa</p>
 				</div>
-				<abbr title="Click to copy email adress">
+				<abbr title="Click to copy email address">
 					<ClickToCopy text="samoastackoverflow@gmail.com" classes="email-button">
 						<span
 							class="email-icon h-[30px] aspect-square rounded-[var(--border-radius-100)] flex items-center justify-center

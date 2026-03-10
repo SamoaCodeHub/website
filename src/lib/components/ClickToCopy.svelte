@@ -9,7 +9,7 @@
 	function triggerToast(message, type = 'success') {
 		toast.trigger({
 			message,
-			background: type === 'error' ? 'variant-filled-error' : 'variant-filled-success',
+			background: type === 'error' ? 'bg-red-600 text-white' : 'bg-green-600 text-white',
 			timeout: 2500
 		});
 	}

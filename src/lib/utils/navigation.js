@@ -1,4 +1,5 @@
-import { goto } from '$app/navigation';
+import { goto, afterNavigate } from '$app/navigation';
+import { tick } from 'svelte';
 
 export async function goToSection(section) {
 	if (section === 'Contributors') {
@@ -12,7 +13,8 @@ export async function goToSection(section) {
 	}
 
 	await goto('/');
-	setTimeout(() => {
+	await tick();
+	requestAnimationFrame(() => {
 		document.getElementById(section)?.scrollIntoView({ behavior: 'smooth' });
-	}, 100);
+	});
 }

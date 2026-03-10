@@ -87,8 +87,7 @@
 
 	<EmblaCarousel>
 		{#each Contributors as teamMember}
-			<button
-				tabindex="0"
+			<div
 				class="embla__slide flex-[0_0_80%] min-w-0 max-w-[270px] h-[300px] relative overflow-hidden
                      rounded-[var(--border-radius-100)] text-left"
 			>
@@ -136,7 +135,7 @@
 						</a>
 					</div>
 				</div>
-			</button>
+			</div>
 		{/each}
 	</EmblaCarousel>
 </section>
@@ -164,6 +163,8 @@
 
 	.card-contributor::before,
 	.embla__slide::before {
+		content: '';
+		position: absolute;
 		top: 0;
 		left: 0;
 		height: 100%;
@@ -176,6 +177,8 @@
 
 	.card-contributor::after,
 	.embla__slide::after {
+		content: '';
+		position: absolute;
 		top: 0;
 		left: 0;
 		height: 100%;

@@ -20,6 +20,7 @@
 	<button
 		class="fixed inset-0 top-[var(--navbar-height)] bg-black/40 backdrop-blur-[2px] z-10"
 		on:click={closeSidebar}
+		aria-label="Close sidebar"
 	></button>
 {/if}
 
@@ -29,7 +30,7 @@
 	use:sidebarEnhance
 	role="dialog"
 	aria-modal="true"
-	class={`lg:hidden variant-filled-surface fixed top-[var(--navbar-height)] bottom-0 w-[80%] max-w-[300px] right-0
+	class={`lg:hidden fixed top-[var(--navbar-height)] bottom-0 w-[80%] max-w-[300px] right-0
           bg-[var(--background-color-100)] backdrop-blur-[3rem] px-[1.25rem] overflow-hidden transform transition 
           duration-300 ease-in-out ${$toggleSidebar ? 'translate-x-0' : 'translate-x-full'} z-20`}
 >

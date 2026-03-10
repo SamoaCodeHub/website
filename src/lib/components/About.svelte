@@ -4,7 +4,7 @@
 	import { IconUsers } from '@tabler/icons-svelte';
 
 	// contributors array for the images
-	const team = [Contributors[0], Contributors[5], Contributors[9]];
+	const team = Contributors.filter((c) => c.featured);
 
 	// offsets for left calc; adjust px values to taste
 	const offsets = ['- 80px', '', '+ 80px'];

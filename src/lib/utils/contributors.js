@@ -18,7 +18,8 @@ export const Contributors = [
 		name: 'Andre Westerlund',
 		title: 'Founder & Senior Full Stack Developer',
 		github: 'https://github.com/westerandr',
-		linkedin: 'https://www.linkedin.com/in/andrewesterlund/'
+		linkedin: 'https://www.linkedin.com/in/andrewesterlund/',
+		featured: true
 	},
 	{
 		avatar: Alesana,
@@ -53,7 +54,8 @@ export const Contributors = [
 		name: 'Ronaldo Pose',
 		title: 'Business Solutions Manager',
 		github: 'https://github.com/renaldox',
-		linkedin: 'https://www.linkedin.com/in/ronaldo-pose/'
+		linkedin: 'https://www.linkedin.com/in/ronaldo-pose/',
+		featured: true
 	},
 	{
 		avatar: Aaron,
@@ -81,7 +83,8 @@ export const Contributors = [
 		name: 'Tausani Ah Chong',
 		title: 'Software Engineer',
 		github: 'https://github.com/tausani-ah-chong',
-		linkedin: 'https://www.linkedin.com/in/tausaniahchong'
+		linkedin: 'https://www.linkedin.com/in/tausaniahchong',
+		featured: true
 	},
 	{
 		avatar: Ainsof,

@@ -1,6 +1,3 @@
-<script>
-</script>
-
 <div
 	class="text-center bg-[var(--grey-100)] my-[clamp(3.125rem,8.3vw,7.5rem)] rounded-[var(--border-radius-100)]
             py-[clamp(3.125rem,8.3vw,7.5rem)]"

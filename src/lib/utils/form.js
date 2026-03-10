@@ -5,9 +5,9 @@ export function validateEmail(email) {
 export function triggerToast(toast, message, type = 'success') {
 	const background =
 		{
-			success: 'variant-filled-success',
-			error: 'variant-filled-error'
-		}[type] ?? 'variant-filled-success';
+			success: 'bg-green-600 text-white',
+			error: 'bg-red-600 text-white'
+		}[type] ?? 'bg-green-600 text-white';
 
 	toast.trigger({ message, background, timeout: 2500 });
 }
