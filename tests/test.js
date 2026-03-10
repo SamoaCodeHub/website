@@ -1,31 +1,33 @@
 import { expect, test } from '@playwright/test';
 
-test('Hero section has expected p', async ({ page }) => {
+// HERO SECTION (h1)
+test('Hero section has expected heading', async ({ page }) => {
 	await page.goto('/');
 	await expect(
-		page.getByText('Press Join us Now to find out more about becoming a Samoa Code Hub Member')
+		page.getByRole('heading', {
+			name: 'The developer network built for progress',
+			level: 1
+		})
 	).toBeVisible();
 });
 
-test('Clicking "Projects" button navigates to projects page and displays Featured Projects h1', async ({
+// PROJECTS NAVIGATION (h2 on the projects page)
+test('Clicking "Projects" button navigates to projects page and displays Featured Projects heading', async ({
 	page
 }) => {
 	await page.goto('/');
 	await page.click('text=Projects');
-	await expect(page.locator('h1:has-text("Featured Projects")')).toBeVisible();
+	await expect(page.getByRole('heading', { name: 'Featured Projects', level: 2 })).toBeVisible();
 });
 
-test('Media section has expected h1', async ({ page }) => {
+// CONTACT SECTION (h2)
+test('Contact section has expected heading', async ({ page }) => {
 	await page.goto('/');
-	await expect(page.getByText('Samoa Code Hub Meet Ups')).toBeVisible();
+	await expect(page.getByRole('heading', { name: 'Contact Us', level: 2 })).toBeVisible();
 });
 
-test('Contact section has expected h1', async ({ page }) => {
-	await page.goto('/');
-	await expect(page.getByRole('heading', { name: 'Contact Us' })).toBeVisible();
-});
-
-test('Contributors section has expected h1', async ({ page }) => {
-	await page.goto('/');
-	await expect(page.getByText('Meet our Seki Devs')).toBeVisible();
+// CONTRIBUTORS PAGE (now at /contributors, h2)
+test('Contributors page has expected heading', async ({ page }) => {
+	await page.goto('/contributors');
+	await expect(page.getByRole('heading', { name: 'Meet our Seki Devs', level: 2 })).toBeVisible();
 });
